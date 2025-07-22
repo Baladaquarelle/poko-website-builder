@@ -6,6 +6,8 @@ uuid: 6861df869d05
 localizationKey: 82eff7824cae
 status: published
 name: Agenda
+eleventyNavigation:
+  order: 10
 ---
 # Agenda complet des activités 
 
