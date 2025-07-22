@@ -6,6 +6,8 @@ uuid: 3ca219c59a41
 localizationKey: e60c1f2c01d0
 status: published
 name: Stages et journées spéciales ou sur-mesure
+eleventyNavigation:
+  order: 40
 ---
 # Stages et journées spéciales ou sur-mesure
 
