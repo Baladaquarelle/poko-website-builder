@@ -21,7 +21,7 @@ L’aquarelle est aussi un voyage intérieur, à la recherche d’un équilibre 
 
 En 2024, ma première professeure d’aquarelle, devenue ma mentor, m’encourage à oser faire le pas : c’est la naissance des Balad’aquarelle. Aujourd’hui, Balad’aquarelle propose des journées et demi-journées d’initiation et de perfectionnement à l’aquarelle de randonnée, des stages en Belgique et à l’étranger (dès 2026) et des journées spéciales (comme par exemple aquarelle et yoga/voyage sonore).
 
-+ Photos
+- Photos
 
 ##  **Approche pédagogique**
 
