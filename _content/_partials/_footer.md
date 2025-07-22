@@ -1,4 +1,4 @@
-{% include "Newsletter.md" %}
+{% include "newsletter.md" %}
 
 Email : [baladaquarelle@gmail.com](mailto:baladaquarelle@gmail.com)
 
