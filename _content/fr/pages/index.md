@@ -13,6 +13,6 @@ Bienvenue dans l'univers de Voyage & Aquarelle
 
 Au pays de la couleur et de la découverte
 
-<img src="/_images/Balad%27aquarelle-logo-RVB-500px-02.webp" alt="" width="300" />
+<img src="/_images/Balad%27aquarelle-logo-RVB-500px-02.webp" alt="" width="300" style="max-width:300px;" />
 
 {% include "activites.md" %}
