@@ -6,6 +6,8 @@ uuid: c3440f3ddf37
 localizationKey: c628ef4b3f4c
 status: published
 name: Journées Balad’aquarelle
+eleventyNavigation:
+  order: 20
 ---
 # Journées Balad’aquarelle
 
