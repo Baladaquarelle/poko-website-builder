@@ -11,7 +11,7 @@ languages:
   - code: EN
     name: English
     customUrlPrefix: null
-    status: inactive
+    status: draft
     isCmsDefault: false
     isWebsiteDefault: false
 collections:
