@@ -7,7 +7,7 @@ localizationKey: e60c1f2c01d0
 status: published
 name: Stages et journées spéciales ou sur-mesure
 eleventyNavigation:
-  order: 40
+  order: 30
 ---
 # Stages et journées spéciales ou sur-mesure
 
