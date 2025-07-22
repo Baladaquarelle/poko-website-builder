@@ -1,3 +1,5 @@
+{% include "Newsletter.md" %}
+
 Email : [baladaquarelle@gmail.com](mailto:baladaquarelle@gmail.com)
 
 Instagram @emiliewatercolors 
