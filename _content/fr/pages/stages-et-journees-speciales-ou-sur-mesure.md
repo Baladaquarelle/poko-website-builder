@@ -19,6 +19,8 @@ Lien vers les dates (agenda)
 
 Photos
 
+<img src="/_images/1.webp" alt="" />
+
 ## Stages « intuition et créativité »
 
 Cette journée de stage t’invite à un voyage au cœur des cinq sens. L’aquarelle devient alors un moyen d’explorer et exprimer tes ressentis.
