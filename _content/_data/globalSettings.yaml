@@ -2,13 +2,13 @@ siteName: Voyage & Aquarelle
 productionUrl: https://www.voyage-aquarelle.be
 logo: /_images/Balad%27aquarelle-logo-RVB-500px-02.webp
 languages:
-  - code: FR
+  - code: fr
     name: Français
     customUrlPrefix: null
     status: published
     isCmsDefault: false
     isWebsiteDefault: false
-  - code: EN
+  - code: en
     name: English
     customUrlPrefix: null
     status: draft
