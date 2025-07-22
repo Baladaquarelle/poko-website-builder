@@ -2,9 +2,9 @@
 
 <footer>
 
-Email : [baladaquarelle@gmail.com](mailto:baladaquarelle@gmail.com)
+Email : [baladaquarelle@gmail.com](baladaquarelle@gmail.com)
 
-Instagram @emiliewatercolors 
+Instagram [@emiliewatercolors ](https://www.instagram.com/emiliewatercolors/)
 
 Facebook [Balad’aquarelle](https://www.facebook.com/profile.php?id=61565101974439)
 
