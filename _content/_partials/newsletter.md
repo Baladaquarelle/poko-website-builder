@@ -16,7 +16,7 @@
 
     <form action="https://gmail.us12.list-manage.com/subscribe/post?u=6de54c566893a7e8017dec274&amp;id=e589a28f63&amp;f_id=0032d9e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 
-        <div id="mc_embed_signup_scroll"><h2>Abonner</h2>
+        <div id="mc_embed_signup_scroll"><h2>Inscription à la newsletter</h2>
 
             <div class="indicates-required"><span class="asterisk">\*</span> indique "obligatoire"</div>
 
