@@ -20,3 +20,13 @@ eleventyNavigation:
 On travaillera en particulier l'utilisation des marqueurs (type fineliner) pour rehausser vos aquarelles.
 
 PAF : 60€ (matériel compris)
+
+**Samedi 23 août 2025&#160;**: **Balad’aquarelle spéciale enfants/ados (à partir de 7 ans)**
+
+**Horaires** : 9h45 à 12h30 
+
+**Lieu** : Villers-la-Ville
+
+Tu connais des enfants qui aiment peindre et souhaite leur offrir (et t’offrir!) un moment spécial de créativité en pleine nature ? Voici une Balad’aquarelle conçue pour un moment convivial entre générations !
+
+PAF : 40€ (matériel compris)
