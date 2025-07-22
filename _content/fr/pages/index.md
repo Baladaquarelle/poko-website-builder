@@ -9,4 +9,8 @@ name: Accueil
 eleventyNavigation:
   order: 1
 ---
+Bienvenue dans l'univers de Voyage & Aquarelle
 
+Au pays de la couleur et de la découverte
+
+<img alt="" />
