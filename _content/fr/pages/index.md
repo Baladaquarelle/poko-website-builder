@@ -6,5 +6,7 @@ uuid: 7e4d40b687a1
 localizationKey: 8619c3fc8a02
 status: published
 name: Accueil
+eleventyNavigation:
+  order: 1
 ---
 
