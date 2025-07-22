@@ -27,7 +27,7 @@ On mange notre pique-nique avant de repartir pour 20 à 30’ de marche, puis on
 
 ## _Dois-je amener quelque chose?_
 
-Le prêt du [**matériel artistique** ]()[[EV1]](#_msocom_1) nécessaire à la journée **est compris dans le prix** de l’activité : aquarelles, pinceaux, papier, pot pour l’eau, essuie pour le pinceau, support pour peindre, crayon. Mais si tu as déjà tes propres pinceaux et aquarelles (de qualité professionnelle donc extra-fine) et que tu les amènes, tu bénéficies d’une ristourne sur le prix de l’activité.
+Le prêt du **matériel artistique** nécessaire à la journée **est compris dans le prix** de l’activité : aquarelles, pinceaux, papier, pot pour l’eau, essuie pour le pinceau, support pour peindre, crayon. Mais si tu as déjà tes propres pinceaux et aquarelles (de qualité professionnelle donc extra-fine) et que tu les amènes, tu bénéficies d’une ristourne sur le prix de l’activité.
 
 ## _“Je n’ose pas me lancer, je suis vraiment nul.le en dessin”_
 
