@@ -44,5 +44,3 @@ Alors j’espère qu’à la lecture de ces quelques lignes, tu te diras “alle
 ## _Comment s’inscrire?_
 
 Envoie un email à [baladaquarelle@gmail.com](mailto:baladaquarelle@gmail.com) en précisant la date à laquelle tu souhaites t’inscrire, le nombre de personnes et si tu as déjà ta propre boîte d’aquarelles extra-fines et tes pinceaux (en précisant la marque des aquarelles et le nombre de couleurs).
-
-{% include "_footer.md" %}
