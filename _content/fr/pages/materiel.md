@@ -11,6 +11,8 @@ name: Matériel
 
 ## Zoom sur les couleurs
 
+<img src="/_images/Lasne%20juin%202025%20%2822%29.webp" alt="" />
+
 “_J’ai déjà peint avec une boîte qui traînait chez moi, mais là, wow, rien à voir comme sensation !_”.
 
 Quand vous vous inscrivez à une Balad’aquarelle, je mets à votre disposition des boîtes d’aquarelles qui contiennent 12 demi-godets. Ce sont des couleurs de qualité “extra-fines”, en d’autres mots, des aquarelles professionnelles. L’aquarelle extra-fine est fabriquée avec des pigments plus purs et broyés plus finement que l’aquarelle dite “fine”, généralement vendue aux débutants.
@@ -32,6 +34,8 @@ Cela dit, chaque artiste a ses préférences et peut-être que les tiennes sont 
 Parfois, les gens me demandent pourquoi j’ai choisi l’aquarelle. Eh bien tout simplement parce que le matériel nécessaire est léger et s’emporte facilement dans mon sac à dos, même quand je pars pour plusieurs semaines de randonnée.
 
 ## Matériel d'aquarelle de voyage
+
+<img src="/_images/WhatsApp%20Image%202025-05-24%20%C3%A0%2017.47.06_246ac36a.webp" alt="" />
 
 Si vous avez toujours rêvé de peindre en vacances, je vous partage ici ma liste de matériel minimaliste et quelques trucs et astuces.
 
