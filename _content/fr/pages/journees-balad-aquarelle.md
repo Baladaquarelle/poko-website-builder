@@ -13,7 +13,7 @@ Offre(-toi) une parenthèse artistique au cœur de la nature
 
 Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager.
 
-![](/_images/Lasne%20juin%202025%20%284%29.webp)
+<img src="/_images/Lasne%20juin%202025%20%284%29.webp" alt="" />
 
 ## _Concrètement, comment ça se passe?_
 
