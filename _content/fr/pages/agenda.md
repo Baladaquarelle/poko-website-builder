@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 # <img src="/_images/Agenda%20complet%20des%20activit%C3%A9s.webp" alt="" /> 
 
-## **Samedi 9 août 2025&#160;**: **Balad’aquarelle classique \*COMPLET\***
+### **Samedi 9 août 2025&#160;**: **Balad’aquarelle classique \*COMPLET\***
 
 **Horaires** : 10h à 16h30 
 
@@ -21,7 +21,7 @@ On travaillera en particulier l'utilisation des marqueurs (type fineliner) pour 
 
 PAF : 60€ (matériel compris)
 
-## **Samedi 23 août 2025&#160;**: **Balad’aquarelle intergénérationnelle (à partir de 7 ans)**
+### **Samedi 23 août 2025&#160;**: **Balad’aquarelle intergénérationnelle (dès 7 ans)**
 
 **Horaires** : 9h45 à 12h30 
 
@@ -33,7 +33,7 @@ Tu connais des enfants qui aiment peindre et souhaite leur offrir (et t’offrir
 
 PAF : 40€ (matériel compris)
 
-## Samedi 20 septembre 2025 : Balad’aquarelle classique 
+### Samedi 20 septembre 2025 : Balad’aquarelle classique 
 
 **Horaires** : 10h à 16h30
 
@@ -41,7 +41,7 @@ PAF : 40€ (matériel compris)
 
 PAF : 60€ (matériel compris) 
 
-## **Samedi 27 septembre : Stage “intuition et créativité”**
+### **Samedi 27 septembre : Stage “intuition et créativité”**
 
  **Horaires** : 10h à 17h
 
@@ -57,7 +57,7 @@ PAF : 80€ (matériel compris) - maximum 12 personnes
 
 [Je m’inscris au “stage intuition et créativité” du 27 septembre](https://gmail.us12.list-manage.com/track/click?u=6de54c566893a7e8017dec274&id=7b118c08ef&e=7796bbf9bf)
 
-## **Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)**
+### **Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)**
 
 Pas de panique, tu peux déjà bloquer ces dates dans ton agenda : 
 
@@ -69,4 +69,4 @@ Samedi 29 novembre
 
 Samedi 13 décembre
 
-Et puis, il y a toujours la possibilité d’une Balad’aquarelle sur-mesure.
+Et puis, il y a toujours la possibilité d’une [Balad’aquarelle sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
