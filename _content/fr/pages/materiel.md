@@ -11,9 +11,7 @@ eleventyNavigation:
 ---
 # ![](/_images/Le%20mat%C3%A9riel%20d%E2%80%99aquarelle%20%281%29.webp)
 
-## Zoom sur les couleurs
-
-<img src="/_images/Lasne%20juin%202025%20%2822%29.webp" alt="" />
+#### Zoom sur les couleurs
 
 “_J’ai déjà peint avec une boîte qui traînait chez moi, mais là, wow, rien à voir comme sensation !_”.
 
@@ -23,7 +21,7 @@ Est-ce vraiment nécessaire d’avoir cette qualité de pigments pour des gens q
 
 Pour que mes ateliers restent tout de même à prix abordable, je crée les boîtes moi-même, à partir de tubes de couleur que je verse dans des demi-godets (de quoi occuper mes soirées d’hiver!). J’adapte bien sûr les couleurs à la saison et/ou à la thématique de la journée. Grâce à ça, mes élèves ont l’occasion d’expérimenter l’intensité et la qualité des pigments professionnels sur du papier d’excellente qualité.
 
-## Zoom sur le papier
+#### Zoom sur le papier
 
 Coton ou cellulose ? Satiné, grain fin ou torchon ? Et quel grammage ?
 
@@ -35,7 +33,7 @@ Cela dit, chaque artiste a ses préférences et peut-être que les tiennes sont 
 
 Parfois, les gens me demandent pourquoi j’ai choisi l’aquarelle. Eh bien tout simplement parce que le matériel nécessaire est léger et s’emporte facilement dans mon sac à dos, même quand je pars pour plusieurs semaines de randonnée.
 
-## Matériel d'aquarelle de voyage
+#### Matériel d'aquarelle de voyage
 
 <img src="/_images/WhatsApp%20Image%202025-05-24%20%C3%A0%2017.47.06_246ac36a.webp" alt="" />
 
