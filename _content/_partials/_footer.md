@@ -1,4 +1,4 @@
-<footer class="grid-auto">
+<footer class="grid-auto" style="--width-column-min: 20rem;">
 {% include "newsletter.md" %}
 <div>
 <p>Email : {{ "baladaquarelle@gmail.com" | emailLink }}</p>
