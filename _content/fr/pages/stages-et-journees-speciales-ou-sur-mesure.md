@@ -9,7 +9,7 @@ name: Stages et journées spéciales ou sur-mesure
 eleventyNavigation:
   order: 30
 ---
-# Stages et journées spéciales ou sur-mesure
+# <img src="/_images/Journ%C3%A9es%20sp%C3%A9ciales%20et%20sur-mesure.webp" alt="" />
 
 ## Activité spéciale enfants et ados « intergénérationnelle »
 
@@ -21,19 +21,13 @@ Lien vers les dates (agenda)
 
 Photos
 
-<img src="/_images/1.webp" alt="" />
-
-## Stages « intuition et créativité »
-
-Cette journée de stage t’invite à un voyage au cœur des cinq sens. L’aquarelle devient alors un moyen d’explorer et exprimer tes ressentis.
+<img src="/_images/Stages%20%C2%AB%20intuition%20et%20cr%C3%A9ativit%C3%A9%20%C2%BB%20%282%29.webp" alt="" />
 
 Le stage est organisé en collaboration avec Helena, qui nous accompagne à la rencontre de notre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à toutes et tous. Nous partageons aussi un voyage sonore et une méditation.
 
 Ton pinceau suit le fil de tes émotions, laissant les pigments de couleur danser avec l’eau sur le papier.
 
-Lien vers les dates (agenda)
-
-Photos
+[Lien vers les dates (agenda)](https://www.voyage-aquarelle.be/fr/agenda/)
 
 ## Atelier ou journée sur-mesure
 
