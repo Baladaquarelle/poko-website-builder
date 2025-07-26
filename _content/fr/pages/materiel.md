@@ -9,7 +9,7 @@ name: Matériel
 eleventyNavigation:
   order: 40
 ---
-# Matériel
+# ![](/_images/Le%20mat%C3%A9riel%20d%E2%80%99aquarelle%20%281%29.webp)
 
 ## Zoom sur les couleurs
 
