@@ -9,7 +9,7 @@ name: Agenda
 eleventyNavigation:
   order: 10
 ---
-# <img src="/_images/Agenda%20complet%20des%20activit%C3%A9s.webp" alt="" /> 
+# ![Agenda complet des activités](/_images/Agenda%20complet%20des%20activit%C3%A9s-1.webp)
 
 #### Samedi 9 août 2025 : Balad’aquarelle classique \*COMPLET\*
 
