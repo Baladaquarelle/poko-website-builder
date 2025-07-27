@@ -10,8 +10,11 @@ import {
   CMS_REPO,
   CMS_BACKEND,
   CMS_BRANCH,
+  collections as selectedCollections,
   languages,
 } from "../../../../env.config.js";
+
+console.log({ selectedCollections });
 
 const isDev = NODE_ENV === "development";
 const mustSetup = !languages?.length;
@@ -78,6 +81,126 @@ class CmsConfig {
     };
   }
   render(data) {
+    const globalSettingsSingleton = {
+      name: "globalSettings",
+      label: "Global Settings",
+      icon: "settings",
+      file: `${CONTENT_DIR}/_data/globalSettings.yaml`,
+      // format: "yaml",
+      fields: [
+        {
+          name: "siteName",
+          label: "Site Name",
+          widget: "string",
+        },
+        {
+          name: "productionUrl",
+          label: "Production URL",
+          widget: "string",
+          // TODO: add pattern validation
+          // prettier-ignore
+          // pattern: [
+          //   "^https?://[\\w\\-._~:/?#[\\]@!$&'()*+,;=%]+$",
+          //   "Must be a URL starting with http:// or https://",
+          // ],
+        },
+        {
+          name: "logo",
+          label: "Logo",
+          widget: "image",
+          required: false,
+        },
+        {
+          name: "htmlHead",
+          label: "HTML Head",
+          widget: "code",
+          required: false,
+          // TODO: default-language not working
+          default_language: "html",
+          output_code_only: true,
+          allow_language_selection: false,
+        },
+        {
+          name: "languages",
+          label: "Languages",
+          description: "❗️ Re-build your site to see your changes here",
+          widget: "list",
+          required: true,
+          collapsed: true,
+          summary:
+            "{{status | capitalize}}: {{code | upper}} - {{name}} -- Default for: {{isCmsDefault | ternary('CMS', '')}} {{isWebsiteDefault | ternary('Website', '')}}",
+          fields: [
+            {
+              name: "code",
+              label: "Language Code",
+              widget: "string",
+              required: true,
+            },
+            {
+              name: "name",
+              label: "Language Name",
+              widget: "string",
+              required: true,
+            },
+            {
+              name: "customUrlPrefix",
+              label: "Custom URL Prefix",
+              widget: "object",
+              collapsed: false,
+              required: false,
+              // summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
+              fields: [
+                {
+                  name: "prefix",
+                  label: "URL Prefix",
+                  widget: "string",
+                  required: false,
+                },
+              ],
+            },
+            {
+              name: "status",
+              label: "Status",
+              widget: "select",
+              default: "published",
+              required: true,
+              options: [
+                { value: "published", label: "Published" },
+                { value: "draft", label: "Draft" },
+                { value: "inactive", label: "Inactive" },
+              ],
+            },
+            {
+              name: "isCmsDefault",
+              label: "Is CMS Default",
+              description: "Defaults to the first language of the list",
+              widget: "boolean",
+              required: true,
+              default: false,
+            },
+            {
+              name: "isWebsiteDefault",
+              label: "Is Website Default",
+              description: "Defaults to the first language of the list",
+              widget: "boolean",
+              required: true,
+              default: false,
+            },
+          ],
+        },
+        {
+          name: "collections",
+          label: "Active Collections",
+          widget: "select",
+          multiple: true,
+          required: false,
+          // TODO: populate this from existing collection definitions
+          // TODO: more customization on collections
+          options: ["articles"],
+        },
+      ],
+    };
+
     const dataCollection = {
       // ...mostCommonMarkdownCollectionConfig,
       // i18n: false,
@@ -88,229 +211,107 @@ class CmsConfig {
       i18n: true,
       files: [
         {
-          name: "globalSettings",
-          label: "Global Settings",
-          icon: "settings",
-          file: `${CONTENT_DIR}/_data/globalSettings.yaml`,
+          name: "languageData",
+          label: "Language Data",
+          icon: "translate",
+          file: `${CONTENT_DIR}/{{locale}}/{{locale}}.yaml`,
+          // format: "yaml",
+          i18n: true,
+          fields: [
+            {
+              name: "dico",
+              label: "Dico",
+              widget: "keyvalue",
+              i18n: true,
+              required: false,
+            },
+            {
+              name: "data",
+              label: "Data",
+              widget: "keyvalue",
+              i18n: true,
+              required: false,
+            },
+            // {
+            //   name: "defaultLanguage",
+            //   label: "Default Language",
+            //   widget: "string",
+            // },
+            // {
+            //   name: "languages",
+            //   label: "Languages",
+            //   widget: "select",
+            //   multiple: true,
+            //   options: ["it", "en", "fr"],
+            // },
+          ],
+        },
+        {
+          name: "metadata",
+          label: "Default Metadata",
+          icon: "page_info",
+          file: `${CONTENT_DIR}/_data/metadata.yaml`,
           // format: "yaml",
           fields: [
             {
-              name: "siteName",
-              label: "Site Name",
-              widget: "string",
-            },
-            {
-              name: "productionUrl",
-              label: "Production URL",
-              widget: "string",
-              // TODO: add pattern validation
-              // prettier-ignore
-              // pattern: [
-              //   "^https?://[\\w\\-._~:/?#[\\]@!$&'()*+,;=%]+$",
-              //   "Must be a URL starting with http:// or https://",
-              // ],
-            },
-            {
-              name: "logo",
-              label: "Logo",
+              name: "image",
+              label: "Image",
               widget: "image",
-              required: false,
-            },
-            {
-              name: "htmlHead",
-              label: "HTML Head",
-              widget: "code",
-              required: false,
-              // TODO: default-language not working
-              default_language: "html",
-              output_code_only: true,
-              allow_language_selection: false,
-            },
-            {
-              name: "languages",
-              label: "Languages",
-              description: "❗️ Re-build your site to see your changes here",
-              widget: "list",
-              required: true,
-              collapsed: true,
-              summary:
-                "{{status | capitalize}}: {{code | upper}} - {{name}} -- Default for: {{isCmsDefault | ternary('CMS', '')}} {{isWebsiteDefault | ternary('Website', '')}}",
-              fields: [
-                {
-                  name: "code",
-                  label: "Language Code",
-                  widget: "string",
-                  required: true,
-                },
-                {
-                  name: "name",
-                  label: "Language Name",
-                  widget: "string",
-                  required: true,
-                },
-                {
-                  name: "customUrlPrefix",
-                  label: "Custom URL Prefix",
-                  widget: "object",
-                  collapsed: false,
-                  required: false,
-                  // summary: "Position: {{fields.order}} | Nav Title: {{fields.title}}",
-                  fields: [
-                    {
-                      name: "prefix",
-                      label: "URL Prefix",
-                      widget: "string",
-                      required: false,
-                    },
-                  ],
-                },
-                {
-                  name: "status",
-                  label: "Status",
-                  widget: "select",
-                  default: "published",
-                  required: true,
-                  options: [
-                    { value: "published", label: "Published" },
-                    { value: "draft", label: "Draft" },
-                    { value: "inactive", label: "Inactive" },
-                  ],
-                },
-                {
-                  name: "isCmsDefault",
-                  label: "Is CMS Default",
-                  description: "Defaults to the first language of the list",
-                  widget: "boolean",
-                  required: true,
-                  default: false,
-                },
-                {
-                  name: "isWebsiteDefault",
-                  label: "Is Website Default",
-                  description: "Defaults to the first language of the list",
-                  widget: "boolean",
-                  required: true,
-                  default: false,
-                },
-              ],
-            },
-            {
-              name: "collections",
-              label: "Active Collections",
-              widget: "select",
-              multiple: true,
-              // TODO: populate this from existing collection definitions
-              // TODO: more customization on collections
-              options: ["articles"],
             },
           ],
         },
-        ...(mustSetup
-          ? []
-          : [
-              {
-                name: "languageData",
-                label: "Language Data",
-                icon: "translate",
-                file: `${CONTENT_DIR}/{{locale}}/{{locale}}.yaml`,
-                // format: "yaml",
-                i18n: true,
-                fields: [
-                  {
-                    name: "dico",
-                    label: "Dico",
-                    widget: "keyvalue",
-                    i18n: true,
-                    required: false,
-                  },
-                  {
-                    name: "data",
-                    label: "Data",
-                    widget: "keyvalue",
-                    i18n: true,
-                    required: false,
-                  },
-                  // {
-                  //   name: "defaultLanguage",
-                  //   label: "Default Language",
-                  //   widget: "string",
-                  // },
-                  // {
-                  //   name: "languages",
-                  //   label: "Languages",
-                  //   widget: "select",
-                  //   multiple: true,
-                  //   options: ["it", "en", "fr"],
-                  // },
-                ],
-              },
-              {
-                name: "metadata",
-                label: "Default Metadata",
-                icon: "page_info",
-                file: `${CONTENT_DIR}/_data/metadata.yaml`,
-                // format: "yaml",
-                fields: [
-                  {
-                    name: "image",
-                    label: "Image",
-                    widget: "image",
-                  },
-                ],
-              },
-              {
-                name: "redirects",
-                label: "Global Redirects",
-                icon: "call_split",
-                file: `${CONTENT_DIR}/_files/_redirects`,
-                // format: "yaml",
-                fields: [
-                  {
-                    name: "body",
-                    label: "Redirects",
-                    widget: "code",
-                    required: false,
-                    output_code_only: true,
-                    allow_language_selection: false,
-                  },
-                ],
-              },
-              {
-                name: "headers",
-                label: "Headers",
-                icon: "contract",
-                file: `${CONTENT_DIR}/_files/_headers`,
-                // format: "yaml",
-                fields: [
-                  {
-                    name: "body",
-                    label: "Headers",
-                    widget: "code",
-                    required: false,
-                    output_code_only: true,
-                    allow_language_selection: false,
-                  },
-                ],
-              },
-              {
-                name: "dataFiles",
-                label: "Data Files",
-                icon: "code",
-                file: `${CONTENT_DIR}/_data/none.yaml`,
-                media_folder: `/${CONTENT_DIR}/_data`,
-                public_folder: "/_data",
-                fields: [],
-              },
-              {
-                name: "publicFiles",
-                label: "Public Files",
-                icon: "attach_file",
-                file: `${CONTENT_DIR}/_files/none.yaml`,
-                media_folder: `/${CONTENT_DIR}/_files`,
-                public_folder: "/_files",
-                fields: [],
-              },
-            ]),
+        {
+          name: "redirects",
+          label: "Global Redirects",
+          icon: "call_split",
+          file: `${CONTENT_DIR}/_files/_redirects`,
+          // format: "yaml",
+          fields: [
+            {
+              name: "body",
+              label: "Redirects",
+              widget: "code",
+              required: false,
+              output_code_only: true,
+              allow_language_selection: false,
+            },
+          ],
+        },
+        {
+          name: "headers",
+          label: "Headers",
+          icon: "contract",
+          file: `${CONTENT_DIR}/_files/_headers`,
+          // format: "yaml",
+          fields: [
+            {
+              name: "body",
+              label: "Headers",
+              widget: "code",
+              required: false,
+              output_code_only: true,
+              allow_language_selection: false,
+            },
+          ],
+        },
+        {
+          name: "dataFiles",
+          label: "Data Files",
+          icon: "code",
+          file: `${CONTENT_DIR}/_data/none.yaml`,
+          media_folder: `/${CONTENT_DIR}/_data`,
+          public_folder: "/_data",
+          fields: [],
+        },
+        {
+          name: "publicFiles",
+          label: "Public Files",
+          icon: "attach_file",
+          file: `${CONTENT_DIR}/_files/none.yaml`,
+          media_folder: `/${CONTENT_DIR}/_files`,
+          public_folder: "/_files",
+          fields: [],
+        },
       ],
     };
     const partialsFields = [
@@ -348,6 +349,88 @@ class CmsConfig {
         },
       },
       fields: partialsFields,
+    };
+    const sectionFields = [
+      ...commonCollectionFields,
+      {
+        name: "name",
+        label: "Name",
+        widget: "string",
+        required: true,
+        i18n: "duplicate",
+      },
+      {
+        name: "blocks",
+        label: "Blocks",
+        widget: "list",
+        required: false,
+        i18n: true,
+        types: [
+          {
+            name: "images",
+            label: "Images",
+            widget: "object",
+            required: false,
+            fields: [
+              {
+                name: "images",
+                label: "Images",
+                widget: "image",
+                required: false,
+                allow_multiple: true,
+              },
+            ],
+          },
+          {
+            name: "markdown",
+            label: "Markdown",
+            widget: "object",
+            required: false,
+            fields: [
+              {
+                name: "value",
+                label: "Value",
+                widget: "markdown",
+                required: false,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "styles",
+        label: "Styles",
+        widget: "code",
+        required: false,
+        output_code_only: true,
+        allow_language_selection: false,
+        language: "css",
+      },
+    ];
+    const sectionsCollection = {
+      name: "sections",
+      label: "Sections",
+      label_singular: "Section",
+      icon: "add_column_right",
+      slug: "{{name}}", // This allows the slug to be localized
+      folder: `${CONTENT_DIR}`,
+      path: "sections/{{slug}}",
+      i18n: { structure: "single_file" },
+      extension: "yaml",
+      create: true,
+      identifier_field: "name",
+      summary: "{{name}}",
+      sortable_fields: {
+        fields: ["name"],
+        default: {
+          field: "name",
+          direction: "ascending",
+        },
+      },
+      // MEDIAS
+      media_folder: `/${CONTENT_DIR}/_images`,
+      public_folder: "/_images",
+      fields: sectionFields,
     };
     const pageFields = [
       ...commonCollectionFields,
@@ -489,6 +572,7 @@ class CmsConfig {
         widget: "markdown",
         required: false,
         i18n: true,
+        editor_components: [],
       },
       {
         name: "eleventyNavigation",
@@ -558,17 +642,53 @@ class CmsConfig {
             hint: "The default image used for sharing preview",
             allow_multiple: false,
             media_library: { config: { max_file_size: 10000000 } },
+            i18n: "duplicate",
+          },
+        ],
+      },
+      {
+        name: "pagePreview",
+        label: "Page Preview",
+        widget: "object",
+        collapsed: true,
+        i18n: true,
+        fields: [
+          {
+            name: "title",
+            label: "Title",
+            widget: "string",
+            required: false,
+            hint: "Default: Page Name",
             i18n: true,
+          },
+          {
+            name: "description",
+            label: "Description",
+            widget: "text",
+            required: false,
+            hint: "Default: Metadata description",
+            i18n: true,
+          },
+          {
+            name: "image",
+            label: "Image",
+            widget: "image",
+            required: false,
+            hint: "The default image used when creating a visual preview of the page on your website. Default: Metadata image",
+            allow_multiple: false,
+            media_library: { config: { max_file_size: 10000000 } },
+            i18n: "duplicate",
           },
         ],
       },
     ];
     const pagesCollection = {
       ...mostCommonMarkdownCollectionConfig,
-      icon: "description",
       name: "pages",
       label: "Pages",
       label_singular: "Page",
+      icon: "description",
+      thumbnail: ["pagePreview.image", "metadata.image"],
       path: "pages/{{slug}}",
       // TODO: check if it works
       slug: "{{name | localize}}", // This allows the slug to be localized
@@ -597,6 +717,22 @@ class CmsConfig {
       media_folder: `/${CONTENT_DIR}/_images`,
       public_folder: "/_images",
       fields: pageFields,
+      index_file: {
+        name: "pages",
+        label: "Page Data",
+        format: "yaml",
+        icon: "home",
+        editor: { preview: false },
+        fields: [
+          {
+            name: "layout",
+            label: "Layout",
+            widget: "string",
+            default: "base",
+            required: false,
+          },
+        ],
+      },
     };
     const articleFields = [
       ...commonCollectionFields,
@@ -686,6 +822,13 @@ class CmsConfig {
     //   fields: [...commonCollectionFields],
     // };
 
+    const optionalCollections = {
+      articles: articlesCollection,
+    };
+    const selectedOptionalCollections = (selectedCollections || []).map(
+      (collectionName) => optionalCollections[collectionName]
+    );
+
     const generalConfig = {
       backend: {
         name: CMS_BACKEND,
@@ -736,8 +879,9 @@ class CmsConfig {
       // I18N
       locale: "en", // Locale for the CMS admin ("en" or "jp" while in beta)
       i18n: {
-        // TODO: We can localize entry slugs: https://github.com/sveltia/sveltia-cms?tab=readme-ov-file#localizing-entry-slugs
-        // TODO: Is it compatible with 11ty?
+        // multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+        // multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+        // single_file - persists a single file in `<folder>/<slug>.<extension>`
         structure: "multiple_folders",
         locales,
         default_locale, // Defaults to the first locale in the list
@@ -749,23 +893,29 @@ class CmsConfig {
         clean_accents: true, // Transliterate accented characters to their closest ASCII equivalent
       },
       collections: [
-        dataCollection,
         ...(mustSetup
           ? []
           : [
+              dataCollection,
               { divider: true },
               partialsCollection,
+              sectionsCollection,
               { divider: true },
               pagesCollection,
-              articlesCollection,
-              { divider: true },
-              // rawFilesCollection,
-              // filesCollection,
-              // dataFilesCollection,
+              ...selectedOptionalCollections,
+              {
+                divider: Boolean(
+                  !mustSetup && data.userConfig.collections?.length
+                ),
+              },
               ...data.userConfig.collections,
             ]),
       ],
-      singletons: [...(mustSetup ? [] : [...data.userConfig.singletons])],
+      singletons: [
+        globalSettingsSingleton,
+        { divider: Boolean(!mustSetup && data.userConfig.singletons?.length) },
+        ...(mustSetup ? [] : [...data.userConfig.singletons]),
+      ],
     };
 
     return JSON.stringify(generalConfig, null, isDev ? 2 : 0);

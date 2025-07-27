@@ -12,6 +12,7 @@ env:
   CONTENT_DIR: ${{ vars.CONTENT_DIR }}
   CMS_AUTH_URL: ${{ vars.CMS_AUTH_URL }}
   PROD_BRANCH: ${{ vars.PROD_BRANCH }}
+  CMS_IMPORT: ${{ vars.CMS_IMPORT }}
   CMS_REPO: ${{ vars.CMS_REPO }}
   CMS_BACKEND: ${{ vars.CMS_BACKEND }}
   CMS_BRANCH: ${{ vars.CMS_BRANCH }}

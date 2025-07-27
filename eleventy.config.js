@@ -10,16 +10,20 @@ import pluginIcons from "eleventy-plugin-icons";
 // import pluginMarkdoc from "@m4rrc0/eleventy-plugin-markdoc";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { imageTransformOptions } from "./src/config-11ty/plugins/imageTransform.js";
-import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.js";
 import yamlData from "./src/config-11ty/plugins/yamlData/index.js";
 import cmsConfig from "./src/config-11ty/plugins/cms-config/index.js";
 import autoCollections from "./src/config-11ty/plugins/auto-collections/index.js";
 import htmlClassesTransform from "./src/config-11ty/plugins/html-classes-transform/index.js";
+import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.js";
+import partialsPlugin from "./src/config-11ty/plugins/partials/index.js";
 // import keystaticPassthroughFiles from './src/config-11ty/plugins/keystaticPassthroughFiles/index.js';
 // -------- Plugins Markdown
 import markdownItAttrs from "markdown-it-attrs";
 // -------- Env Variables
+import * as env from "./env.config.js";
 import {
+  CMS_IMPORT,
+  ELEVENTY_RUN_MODE,
   BUILD_LEVEL,
   WORKING_DIR,
   WORKING_DIR_ABSOLUTE,
@@ -62,6 +66,8 @@ import {
   wrapper,
 } from "./src/config-11ty/shortcodes/index.js";
 // import { ogImageSelected } from "./src/config-11ty/shortcodes/index.js";
+
+console.log("---------ENV-----------\n", env, "\n---------/ENV---------");
 
 // TODOS:
 // - Look at persisting images in cache between builds: https://github.com/11ty/eleventy-img/issues/285
@@ -124,11 +130,18 @@ export default async function (eleventyConfig) {
   // --------------------- Custom Nunjucks setup
   // TODO: Does this work as expected?
   // NOTE: This is a workaround because virtual templates does not work for includes
-  let nunjucksEnvironment = new Nunjucks.Environment([
-    new Nunjucks.FileSystemLoader(`${WORKING_DIR}/${PARTIALS_DIR}`),
-    new Nunjucks.FileSystemLoader(`src/content/_partials`),
-  ]);
-  eleventyConfig.setLibrary("njk", nunjucksEnvironment);
+
+  // let nunjucksEnvironment = new Nunjucks.Environment(
+  //   [
+  //     new Nunjucks.FileSystemLoader(`${WORKING_DIR}/${PARTIALS_DIR}`),
+  //     new Nunjucks.FileSystemLoader(`src/content/_partials`),
+  //   ],
+  //   {
+  //     dev: true,
+  //     watch: ELEVENTY_RUN_MODE !== "build",
+  //   }
+  // );
+  // eleventyConfig.setLibrary("njk", nunjucksEnvironment);
 
   // --------------------- Preprocessors
   eleventyConfig.addPreprocessor("Publication Status", "*", (data, content) => {
@@ -144,7 +157,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(directoryOutputPlugin);
   eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(IdAttributePlugin, {
-    selector: "h1,h2,h3,h4,h5,h6,.id-attr", // default: "h1,h2,h3,h4,h5,h6"
+    selector: "h1,h2,h3,h4,h5,h6,.id", // default: "h1,h2,h3,h4,h5,h6"
   });
   eleventyConfig.addPlugin(I18nPlugin, {
     defaultLanguage: defaultLangCode, // Required
@@ -192,6 +205,11 @@ export default async function (eleventyConfig) {
       // body: "imported-body-class",
     },
   });
+  // TODO: Try integrating CSS into every html file
+  // TODO: Choose method
+  // - 11ty Bundler
+  // - UnoCSS with [bun-plugin-unocss](https://github.com/stacksjs/bun-plugin-unocss)
+  // eleventyConfig.addPlugin(embedPageCss);
 
   // --------------------- Populate files and default content
   // Populate Default Content: Copy `src/content-static/` to `dist`
@@ -199,10 +217,31 @@ export default async function (eleventyConfig) {
   // Copy User's files: `src/content-static/` to `dist`
   eleventyConfig.addPassthroughCopy({ [`${WORKING_DIR}/_files`]: "/" });
   eleventyConfig.addPassthroughCopy({ [`${WORKING_DIR}/*.css`]: "/" });
+  // Copy Sveltia CMS if not using CDN
+  if (CMS_IMPORT === "npm") {
+    eleventyConfig.addPassthroughCopy({
+      "node_modules/@sveltia/cms/dist/sveltia-cms.js":
+        "assets/js/sveltia-cms.js",
+      "node_modules/@sveltia/cms/dist/sveltia-cms.mjs":
+        "assets/js/sveltia-cms.mjs",
+    });
+  } else if (CMS_IMPORT !== "cdn") {
+    eleventyConfig.addPassthroughCopy({
+      [CMS_IMPORT + "sveltia-cms.js"]: "assets/js/sveltia-cms.js",
+      [CMS_IMPORT + "sveltia-cms.mjs"]: "assets/js/sveltia-cms.mjs",
+    });
+  }
   // Populate Default Content with virtual templates
   await eleventyConfig.addPlugin(populateInputDir, {
     // logLevel: 'debug',
     sources: ["src/content"],
+  });
+  // Populate Default Content with virtual templates
+  await eleventyConfig.addPlugin(partialsPlugin, {
+    dirs: [
+      path.join(WORKING_DIR, PARTIALS_DIR),
+      path.join("src/content/_partials"),
+    ],
   });
   // Copy files (Keystatic)
   // Retrieve public files from the _files directory
@@ -212,6 +251,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "base.html");
 
   // --------------------- Global Data
+  eleventyConfig.addGlobalData("env", { ...env });
   eleventyConfig.addGlobalData("baseUrl", BASE_URL);
   eleventyConfig.addGlobalData("prodUrl", PROD_URL);
   eleventyConfig.addGlobalData("layout", "base");
@@ -247,6 +287,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("emailLink", emailLink);
 
   // --------------------- Shortcodes
+  // eleventyConfig.addAsyncShortcode("partial", partialShortcode);
   eleventyConfig.addShortcode("n", newLine);
   eleventyConfig.addShortcode("image", image);
   eleventyConfig.addShortcode("gallery", gallery);

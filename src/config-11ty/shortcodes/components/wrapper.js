@@ -1,7 +1,11 @@
 export function wrapper(content, attr) {
-  return `<div>
+  const { wrapperTag } = attr || {};
+  const tag = wrapperTag || "div";
+
+  console.log({ attr, tag });
+  return `<${tag}>
 
 ${content}
 
-</div>`;
+</${tag}>`;
 }

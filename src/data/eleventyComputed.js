@@ -46,6 +46,7 @@ export default {
           url: template.page.url,
           name: template.data.name,
           title: template.data.title,
+          pagePreview: template.data.pagePreview,
           isCurrent: template.data.lang === data.lang,
           isDefault: template.data.lang === defaultLang,
         };
@@ -118,6 +119,17 @@ export default {
       title: [titleCascade, siteName].filter(Boolean).join(" | "),
       description: (data.metadata?.description || gMeta.description) ?? "",
       image: (data.metadata?.image || gMeta.image) ?? "",
+    };
+  },
+  pagePreview: (data) => {
+    const title = data.pagePreview?.title || data.title || null;
+    const description =
+      data.pagePreview?.description || data.metadata?.description || null;
+    const image = data.pagePreview?.image || data.metadata?.image || null;
+    return {
+      title,
+      description,
+      image,
     };
   },
   // Just to make them easier to find in the data object

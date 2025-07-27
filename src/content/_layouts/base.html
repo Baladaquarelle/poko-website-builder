@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{lang or 'en'}}" class="no-js">
   <head>
-    {% include "_html-head-default.md" ignore missing %}
+    {% partial "_html-head-default.md" %}
   </head>
   <body>
     <!-- Navigation -->
-    {% include "_main-nav.md" ignore missing %}
+    {% partial "_main-nav.md", {}, "njk" %}
 
     <!-- Content -->
-    {% include "_main-content.md" ignore missing %}
+    {% partial "_main-content.md" %}
 
     <!-- Footer -->
-    {% include "_footer.md" ignore missing %}
+    {% partial '_footer.md' %}
   </body>
 </html>

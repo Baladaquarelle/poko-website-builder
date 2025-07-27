@@ -13,10 +13,10 @@
     "bun": ">=1.2.8"
   },
   "scripts": {
-    "build": "BRANCH=$(git symbolic-ref --short HEAD) bun --bun run eleventy",
-    "build:gh-pages": "BRANCH=$(git symbolic-ref --short HEAD) bun --bun run eleventy",
-    "dev": "BRANCH=$(git symbolic-ref --short HEAD) bun --bun run eleventy --serve",
-    "start": "BRANCH=$(git symbolic-ref --short HEAD) bun --bun run eleventy --serve",
+    "build": "BRANCH=$(git symbolic-ref --short HEAD) GIT_REMOTES=$(git remote -v) bun --bun run eleventy",
+    "build:gh-pages": "BRANCH=$(git symbolic-ref --short HEAD) GIT_REMOTES=$(git remote -v) bun --bun run eleventy",
+    "dev": "BRANCH=$(git symbolic-ref --short HEAD) GIT_REMOTES=$(git remote -v) bun --bun run eleventy --serve",
+    "start": "BRANCH=$(git symbolic-ref --short HEAD) GIT_REMOTES=$(git remote -v) bun --bun run eleventy --serve",
     "clean": "rm -rf dist",
     "clean:modules": "rm -rf dist node_modules"
   },
@@ -39,7 +39,9 @@
     "name": "Marc Coët",
     "url": "https://www.m4rr.co/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@sveltia/cms": "^0.91.9"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.3",

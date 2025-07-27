@@ -12,12 +12,14 @@ console.log({ processEnv });
 // GENERAL
 export const NODE_ENV = processEnv.NODE_ENV || "production";
 export const ELEVENTY_RUN_MODE = processEnv.ELEVENTY_RUN_MODE;
+// Can be "cdn", "npm", "<relative-path>"
+export const CMS_IMPORT = processEnv.CMS_IMPORT || "npm";
 
 // DIRECTORIES
 // Output directory
 export const OUTPUT_DIR = processEnv.OUTPUT_DIR || "dist";
 // Cache directory
-export const CACHE_DIR = processEnv.CACHE_DIR || "node_modules/.astro";
+export const CACHE_DIR = processEnv.CACHE_DIR || ".cache";
 // Files output directory
 export const FILES_OUTPUT_DIR = processEnv.FILES_OUTPUT_DIR || "assets/files";
 export const FILES_LIBRARY_OUTPUT_DIR =
@@ -61,6 +63,13 @@ export const LOCAL_BUILD = Boolean(
   !NETLIFY_BUILD && !CLOUDFLARE_BUILD && !VERCEL_BUILD
 );
 
+// @github.com:m4rrc0/poko-website-builder.git
+const GITHUB_REPO_INFERRED = processEnv.GIT_REMOTES?.split("\n")
+  ?.find((remote) => remote.includes("github.com"))
+  ?.split(":")
+  ?.pop()
+  ?.split(".")?.[0];
+
 // GITHUB Pages REPO inferrence
 export const GITHUB_GIT_REPO_OWNER = processEnv.GITHUB_REPOSITORY_OWNER;
 export const GITHUB_GIT_REPO_NAME =
@@ -101,7 +110,14 @@ export const REPO =
   processEnv.REPO ||
   GITHUB_GIT_REPO ||
   REPOSITORY_URL ||
-  (REPO_OWNER && REPO_NAME && `${REPO_OWNER}/${REPO_NAME}`);
+  (REPO_OWNER && REPO_NAME && `${REPO_OWNER}/${REPO_NAME}`) ||
+  GITHUB_REPO_INFERRED;
+
+console.log({
+  GIT_REMOTES: processEnv.GIT_REMOTES,
+  GITHUB_REPO_INFERRED,
+  REPO,
+});
 
 export const PROD_BRANCH = processEnv.PROD_BRANCH || "main";
 // BRANCH inferrence
@@ -146,6 +162,7 @@ try {
   console.error("Error reading globalSettings.yaml:", error);
 }
 export { globalSettings };
+export const collections = globalSettings?.collections || [];
 export const languages =
   globalSettings?.languages?.map(transformLanguage) || [];
 
@@ -164,23 +181,21 @@ export const BASE_URL = processEnv.BASE_URL?.replace(/\/+$/, "");
 export const DISPLAY_URL =
   processEnv.DISPLAY_URL?.replace(/\/+$/, "") || BASE_URL || PROD_URL;
 
-console.log({ PROD_URL, productionUrl: globalSettings?.productionUrl });
-
-export default {
-  NETLIFY_BUILD,
-  CLOUDFLARE_BUILD,
-  VERCEL_BUILD,
-  LOCAL_BUILD,
-  VERCEL_GIT_REPO_OWNER,
-  VERCEL_GIT_REPO_SLUG,
-  REPOSITORY_URL,
-  NETLIFY_REPO_NAME,
-  NETLIFY_REPO_OWNER,
-  NETLIFY_REPO,
-  REPO_OWNER,
-  REPO_NAME,
-  REPO,
-  BRANCH,
-  PREFERRED_HOSTING,
-  WORKING_DIR,
-};
+// export default {
+//   NETLIFY_BUILD,
+//   CLOUDFLARE_BUILD,
+//   VERCEL_BUILD,
+//   LOCAL_BUILD,
+//   VERCEL_GIT_REPO_OWNER,
+//   VERCEL_GIT_REPO_SLUG,
+//   REPOSITORY_URL,
+//   NETLIFY_REPO_NAME,
+//   NETLIFY_REPO_OWNER,
+//   NETLIFY_REPO,
+//   REPO_OWNER,
+//   REPO_NAME,
+//   REPO,
+//   BRANCH,
+//   PREFERRED_HOSTING,
+//   WORKING_DIR,
+// };
