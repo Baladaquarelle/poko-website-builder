@@ -15,7 +15,7 @@ Offre(-toi) une parenthèse artistique au cœur de la nature.
 
 Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager.
 
-## _Concrètement, comment ça se passe?_
+#### _Concrètement, comment ça se passe?_
 
 On se retrouve en plein air autour d’un thé ou d’un café à l’heure et au lieu prévus. Le sac avec le matériel est distribué et je t’en explique le contenu, ainsi que le programme de la journée. Si tu as des attentes ou des envies particulières, c’est le bon moment pour m’en faire part.
 
@@ -25,11 +25,11 @@ Je fais une proposition de sujet et une courte démonstration, puis c’est à t
 
 On mange notre pique-nique avant de repartir pour 20 à 30’ de marche, puis on peint dans un nouveau lieu.
 
-## _Dois-je amener quelque chose?_
+#### _Dois-je amener quelque chose?_
 
 Le prêt du **matériel artistique** nécessaire à la journée **est compris dans le prix** de l’activité : aquarelles, pinceaux, papier, pot pour l’eau, essuie pour le pinceau, support pour peindre, crayon. Mais si tu as déjà tes propres pinceaux et aquarelles (de qualité professionnelle donc extra-fine) et que tu les amènes, tu bénéficies d’une ristourne sur le prix de l’activité.
 
-## _“Je n’ose pas me lancer, je suis vraiment nul.le en dessin”_
+#### _“Je n’ose pas me lancer, je suis vraiment nul.le en dessin”_
 
 C’est probablement la phrase que j’entends le plus souvent dans la bouche des adultes…
 
@@ -41,6 +41,6 @@ Les Balad’aquarelles sont conçues pour t’aider à dépasser ces limitations
 
 Alors j’espère qu’à la lecture de ces quelques lignes, tu te diras “allez, j’ose !”
 
-## _Comment s’inscrire?_
+#### _Comment s’inscrire?_
 
 Vérifie sur la [page agenda](https://www.voyage-aquarelle.be/fr/agenda/) la date ou les dates qui te conviennent et inscris-toi via le lien mentionné. Il est aussi possible d'organiser des[ Balad'aquarelle à la demande sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
