@@ -13,7 +13,7 @@ eleventyNavigation:
 
 Emilie, marcheuse et aquarelliste (entre autres)
 
-![Approche pédagogique](/_images/Approche%20p%C3%A9dagogique.webp)
+![](/_images/Qui%20suis%20je.webp)
 
 A côté de mon travail de juriste spécialisée droits humains, je suis passionnée de nature, de voyages et de rencontres. C’est d’ailleurs après une randonnée en autonomie de 3000 kilomètres en Nouvelle-Zélande (le Te Araroa) en 2018, inspirée par les aquarelles d’un randonneur qui marche quelques jours devant moi, que j’achète ma première boîte d’aquarelles. 
 
