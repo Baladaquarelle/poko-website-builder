@@ -9,7 +9,7 @@ name: Journées Balad’aquarelle
 eleventyNavigation:
   order: 20
 ---
-# 
+# ![Journées Balad'aquarelle](/_images/Journ%C3%A9es%20Balad%E2%80%99aquarelle.webp)
 
 Offre(-toi) une parenthèse artistique au cœur de la nature.
 
