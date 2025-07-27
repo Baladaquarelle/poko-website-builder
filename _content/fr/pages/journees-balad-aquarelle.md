@@ -15,7 +15,7 @@ Offre(-toi) une parenthèse artistique au cœur de la nature.
 
 Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager.
 
-<img src="/_images/Lasne%20juin%202025%20%284%29.webp" alt="" width="700" style="max-width:700px;" />
+![](/_images/Journ%C3%A9e%20Balad%27aquarelle.webp)
 
 ## _Concrètement, comment ça se passe?_
 
@@ -45,4 +45,4 @@ Alors j’espère qu’à la lecture de ces quelques lignes, tu te diras “alle
 
 ## _Comment s’inscrire?_
 
-Envoie un email à [baladaquarelle@gmail.com](mailto:baladaquarelle@gmail.com) en précisant la date à laquelle tu souhaites t’inscrire, le nombre de personnes et si tu as déjà ta propre boîte d’aquarelles extra-fines et tes pinceaux (en précisant la marque des aquarelles et le nombre de couleurs).
+Vérifie sur la [page agenda](https://www.voyage-aquarelle.be/fr/agenda/) la date ou les dates qui te conviennent et inscris-toi via le lien mentionné. Il est aussi possible d'organiser des[ Balad'aquarelle à la demande sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
