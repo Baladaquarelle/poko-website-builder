@@ -15,7 +15,7 @@ Emilie, marcheuse et aquarelliste (entre autres)
 
 ![](/_images/Qui%20suis%20je.webp)
 
-A côté de mon travail de juriste spécialisée droits humains, je suis passionnée de nature, de voyages et de rencontres. C’est d’ailleurs après une randonnée en autonomie de 3000 kilomètres en Nouvelle-Zélande (le Te Araroa) en 2018, inspirée par les aquarelles d’un randonneur qui marche quelques jours devant moi, que j’achète ma première boîte d’aquarelles. 
+A côté de mon travail de juriste spécialisée en droits humains, je suis passionnée de nature, de voyages et de rencontres. C’est d’ailleurs après une randonnée en autonomie de 3000 kilomètres en Nouvelle-Zélande (le Te Araroa) en 2018, inspirée par les aquarelles d’un randonneur qui marche quelques jours devant moi, que j’achète ma première boîte d’aquarelles. 
 
 Légères, les aquarelles s’emportent facilement dans le sac à dos. Depuis, elles ne me quittent plus : Chemin de Compostelle du Nord, Sentier Cathare, Route de la Pierre Sèche (GR 221), voyage en Amérique Centrale, Arizona Trail, Cretan Way, Ladakh,… Les carnets de voyage se succèdent et m’offrent un nouveau regard sur le monde.
 
