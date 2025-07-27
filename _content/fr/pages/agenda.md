@@ -33,6 +33,8 @@ Tu connais des enfants qui aiment peindre et souhaite leur offrir (et t’offrir
 
 PAF : 40€ (matériel compris)
 
+[Je m'inscris à la Balad'aquarelle intergénérationnelle du 23 août 2025](https://docs.google.com/forms/d/e/1FAIpQLSej-145Thm5NS4vecaN5PJYHff5AgwrwdNmCfhW9AbQX3Y3Bw/viewform?usp=header)
+
 #### Samedi 20 septembre 2025 : Balad’aquarelle classique 
 
 **Horaires** : 10h à 16h30
@@ -40,6 +42,8 @@ PAF : 40€ (matériel compris)
 **Lieu** : Bois de Meerdael
 
 PAF : 60€ (matériel compris) 
+
+[Je m'inscris à la Balad'aquarelle du samedi 20 septembre 2025](https://forms.gle/ChT2LxAHG5gGp3eQ7)
 
 #### **Samedi 27 septembre : Stage “intuition et créativité”**
 
@@ -61,12 +65,12 @@ PAF : 80€ (matériel compris) - maximum 12 personnes
 
 Pas de panique, tu peux déjà bloquer ces dates dans ton agenda : 
 
-Dimanche 19 octobre
+Samedi 18 octobre 2025
 
-Dimanche 23 novembre
+Dimanche 23 novembre 2025
 
-Samedi 29 novembre
+Samedi 29 novembre 2025
 
-Samedi 13 décembre
+Samedi 13 décembre 2025
 
 Et puis, il y a toujours la possibilité d’une [Balad’aquarelle sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
