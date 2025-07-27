@@ -9,13 +9,11 @@ name: Journées Balad’aquarelle
 eleventyNavigation:
   order: 20
 ---
-# Journées Balad’aquarelle
+# 
 
 Offre(-toi) une parenthèse artistique au cœur de la nature.
 
 Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager.
-
-![](/_images/Journ%C3%A9e%20Balad%27aquarelle.webp)
 
 ## _Concrètement, comment ça se passe?_
 
