@@ -47,7 +47,7 @@ PAF : 60€ (matériel compris)
 
 #### Samedi 27 septembre : Stage “intuition et créativité”
 
-![A réserver dans votre agenda](/_images/Autres%20opportunit%C3%A9s.webp)
+![](/_images/Stages%20%C2%AB%20intuition%20et%20cr%C3%A9ativit%C3%A9%20%C2%BB%20%282%29.webp)
 
 **Horaires** : 10h à 17h
 
