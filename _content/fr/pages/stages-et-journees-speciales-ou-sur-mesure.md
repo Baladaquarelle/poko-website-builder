@@ -21,7 +21,7 @@ La journée est axée sur la collaboration entre les adultes et les jeunes.
 
 [Lien vers les dates (agenda](https://www.voyage-aquarelle.be/fr/agenda/)[)](https://www.voyage-aquarelle.be/fr/agenda/)
 
-<img src="/_images/Stages%20%C2%AB%20intuition%20et%20cr%C3%A9ativit%C3%A9%20%C2%BB%20%282%29.webp" alt="" />
+![Stage intuition et créativité - une journée au coeur des cinq sens](/_images/Stages%20%C2%AB%20intuition%20et%20cr%C3%A9ativit%C3%A9%20%C2%BB%20%282%29.webp)
 
 Le stage est organisé en collaboration avec Helena, qui nous accompagne à la rencontre de notre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à toutes et tous. Nous partageons aussi un voyage sonore et une méditation.
 
