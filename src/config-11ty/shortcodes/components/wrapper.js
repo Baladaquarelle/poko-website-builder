@@ -1,9 +1,9 @@
 export function wrapper(content, attr) {
-  const { wrapperTag } = attr || {};
-  const tag = wrapperTag || "div";
+  const { tag = "div", __keywords, ...attrs } = attr || {};
 
-  console.log({ attr, tag });
-  return `<${tag}>
+  return `<${tag} ${Object.entries(attrs)
+    .map(([key, value]) => `${key}="${value}"`)
+    .join(" ")}>
 
 ${content}
 
