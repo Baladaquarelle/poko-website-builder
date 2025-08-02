@@ -21,9 +21,9 @@ On se retrouve en plein air autour d’un thé ou d’un café à l’heure et a
 
 Après une première expérimentation des couleurs en guise de « mise en jambe », on se met en route. En chemin, on en profite pour observer la nature et exercer notre œil. Après 20 à 30 minutes de marche, on s’installe pour peindre notre premier « vrai » sujet.
 
-Je fais une proposition de sujet et une courte démonstration, puis c’est à ton tour. Tu peux choisir de peindre un autre sujet si tu le souhaites. Je passe parmi les élèves pour répondre aux questions et
+Je fais une proposition de sujet et une courte démonstration, puis c’est à ton tour. Tu peux choisir de peindre un autre sujet si tu le souhaites. Je passe parmi les élèves pour répondre aux questions et faire éventuellement l'une ou l'autre suggestion technique à celles et ceux qui le souhaitent.
 
-On mange notre pique-nique avant de repartir pour 20 à 30’ de marche, puis on peint dans un nouveau lieu.
+On mange notre pique-nique avant de repartir pour 20 à 30’ de marche, puis on s'arrête pour peindre dans un nouveau lieu.
 
 #### _Dois-je amener quelque chose?_
 
