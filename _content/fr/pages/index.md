@@ -9,7 +9,7 @@ name: Accueil
 eleventyNavigation:
   order: 1
 ---
-<img src="/_images/Balad%27aquarelle-logo-RVB-500px-02.webp" alt="" width="300" style="max-width:300px;" />
+<img src="/_images/Balad%27aquarelle-logo-RVB-500px-02.webp" alt="" width="200" style="max-width:200px;" />
 
 Bienvenue sur le tout nouveau site internet de Balad'aquarelle - voyage et aquarelle. Ce site est en construction et je vous remercie déjà pour votre compréhension et votre patience. 
 
