@@ -11,17 +11,7 @@ eleventyNavigation:
 ---
 # ![Agenda complet des activités](/_images/Agenda%20complet%20des%20activit%C3%A9s-1.webp)
 
-#### Samedi 9 août 2025 : [Balad’aquarelle classique](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/) \*COMPLET\*
-
-**Horaires** : 10h à 16h30 
-
-**Lieu** : Bois de Lauzelle à Louvain-la-Neuve
-
-On travaillera en particulier l'utilisation des marqueurs (type fineliner) pour rehausser vos aquarelles.
-
-PAF : 60€ (matériel compris)
-
-#### **Samedi 23 août 2025&#160;**: [**Balad’aquarelle intergénérationnelle (dès 7 ans)**](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/)
+#### [**Balad’aquarelle intergénérationnelle (dès 7 ans)**](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/)
 
 **Horaires** : 9h45 à 12h30 
 
