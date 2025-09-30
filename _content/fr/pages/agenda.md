@@ -13,19 +13,23 @@ eleventyNavigation:
 
 #### 
 
-#### Samedi 20 septembre 2025 : Balad’aquarelle classique 
+#### Samedi 18 octobre 2025 : atelier débutant.e
 
-Une journée d'aquarelle en pleine nature dans des lieux inspirants (pour plus de détails, lire les informations dans [Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)).
+**Horaires** : 10h à 12h
 
-**Horaires** : 10h à 16h30
+**Lieu** : Rixensart ou La Hulpe
 
-**Lieu** : Bois de Meerdael
+Si vous êtes débutant.e et que vous n'osez pas vous lancer sans avoir appris quelques bases techniques, cette matinée est faite pour vous. 
 
-PAF : 60€ (matériel compris) 
+Vous y apprendrez à utiliser le matériel et comprendre les critères de choix de celui-ci (pinceau, papier et couleurs). 
 
-[Je m'inscris à la Balad'aquarelle du samedi 20 septembre 2025](https://forms.gle/ChT2LxAHG5gGp3eQ7)
+De plus, vous découvrirez et pratiquerez les techniques et notions suivantes : technique sèche et humide, lavis en aplat et en dégradé, valeurs, ouvrir des blancs et perspective atmosphérique. 
 
-#### Samedi 27 septembre : Stage “intuition et créativité”
+De quoi gagner en confiance et sauter le pas !
+
+[Je m'inscris à l'atelier du 18 octobre 2025.](https://forms.gle/rjB3wdFDPHmkwAaR9)
+
+#### Dimanche 23 novembre et samedi 13 décembre 2025 : Stages “intuition et créativité”
 
 ![](/_images/Stages%20%C2%AB%20intuition%20et%20cr%C3%A9ativit%C3%A9%20%C2%BB%20%282%29.webp)
 
@@ -33,24 +37,20 @@ PAF : 60€ (matériel compris)
 
 **Lieu** : La Hulpe, dans une yourte
 
-Une journée exceptionnelle, organisée en collaboration avec Helena, qui nous accompagnera à la rencontre de notre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à toutes et tous.  Nous partagerons aussi un voyage sonore et une méditation. Ton pinceau suivra le fil de tes émotions, laissant les pigments de couleur danser avec l’eau sur le papier. Un moment pour ralentir et prendre soin de soi. 
+Suite au succès de la journée du 27 septembre et aux demandes de prévoir une nouvelle date, Helena et Emilie vous invitent à les rejoindre le **23 novembre et/ou le 13 décembre aux Collines de Babelle**. 
 
-PAF : 80€ (matériel compris) - maximum 12 personnes
+Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!  
 
-[Je m’inscris au “stage intuition et créativité” du 27 septembre](https://gmail.us12.list-manage.com/track/click?u=6de54c566893a7e8017dec274&id=7b118c08ef&e=7796bbf9bf)
+PAF : 80€ (matériel compris) par journée - maximum 12 personnes
+
+[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
+
+#### 
 
 #### "Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)"
 
 ![A réserver dans votre agenda](/_images/Autres%20opportunit%C3%A9s.webp)
 
-Pas de panique, tu peux déjà bloquer ces dates dans ton agenda : 
+Samedi 29 novembre 2025 : demi-journée d'aquarelle en intérieur. 
 
-Samedi 18 octobre 2025
-
-Dimanche 23 novembre 2025
-
-Samedi 29 novembre 2025
-
-Samedi 13 décembre 2025
-
-Et puis, il y a toujours la possibilité d’une [Balad’aquarelle sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
+Et puis, il y a toujours la possibilité d’organiser une [Balad’aquarelle sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
