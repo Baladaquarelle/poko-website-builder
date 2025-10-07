@@ -27,6 +27,8 @@ De plus, vous découvrirez et pratiquerez les techniques et notions suivantes : 
 
 De quoi gagner en confiance et sauter le pas !
 
+PAF : 30€, matériel compris - maximum 5 personnes
+
 [Je m'inscris à l'atelier du 18 octobre 2025.](https://forms.gle/rjB3wdFDPHmkwAaR9)
 
 #### Dimanche 23 novembre et samedi 13 décembre 2025 : Stages “intuition et créativité”
@@ -45,12 +47,20 @@ PAF : 80€ (matériel compris) par journée - maximum 12 personnes
 
 [Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
 
-#### 
+#### Samedi 29 novembre 2025 : atelier carnet de voyage. 
+
+**Horaires** : 14h à 17h
+
+**Lieu** : Dans le Brabant wallon, probablement du côté de La Hulpe
+
+Une demi-journée au chaud pour un atelier "carnet de voyage". De quoi vous mettre du soleil plein les yeux, quelle que soit la météo. 
+
+PAF : 45€ (matériel compris) - maximum 8 personnes
 
 #### "Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)"
 
 ![A réserver dans votre agenda](/_images/Autres%20opportunit%C3%A9s.webp)
 
-Samedi 29 novembre 2025 : demi-journée d'aquarelle en intérieur. 
+Des dates supplémentaires arrivent bientôt !
 
 Et puis, il y a toujours la possibilité d’organiser une [Balad’aquarelle sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
