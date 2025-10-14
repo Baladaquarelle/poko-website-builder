@@ -13,7 +13,7 @@ eleventyNavigation:
 
 #### 
 
-#### Samedi 18 octobre 2025 : atelier débutant.e
+#### Samedi 18 octobre 2025 : atelier débutant.e (COMPLET)
 
 **Horaires** : 10h à 12h
 
