@@ -39,6 +39,8 @@ Une demi-journée au chaud pour un atelier "carnet de voyage". De quoi vous mett
 
 PAF : 45€ (matériel compris) par atelier - maximum 8 personnes
 
+[Je m'inscris à un atelier carnet de voyage.](https://forms.gle/GJofbXiWXaRzXz3x7) 
+
 #### "Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)"
 
 ![A réserver dans votre agenda](/_images/Autres%20opportunit%C3%A9s.webp)
