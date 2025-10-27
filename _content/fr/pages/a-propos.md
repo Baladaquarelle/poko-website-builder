@@ -8,14 +8,16 @@ status: published
 name: A propos
 eleventyNavigation:
   order: 50
+vars: {}
 ---
+
 #### **Qui suis-je ?**
 
 Emilie, marcheuse et aquarelliste (entre autres)
 
-![](/_images/Qui%20suis%20je.webp)
+{% image src="/_images/qui-suis-je.webp", alt="Émilie en randonnée et en train de peindre" %}
 
-A côté de mon travail de juriste spécialisée en droits humains, je suis passionnée de nature, de voyages et de rencontres. C’est d’ailleurs après une randonnée en autonomie de 3000 kilomètres en Nouvelle-Zélande (le Te Araroa) en 2018, inspirée par les aquarelles d’un randonneur qui marche quelques jours devant moi, que j’achète ma première boîte d’aquarelles. 
+A côté de mon travail de juriste spécialisée en droits humains, je suis passionnée de nature, de voyages et de rencontres. C’est d’ailleurs après une randonnée en autonomie de 3000 kilomètres en Nouvelle-Zélande (le Te Araroa) en 2018, inspirée par les aquarelles d’un randonneur qui marche quelques jours devant moi, que j’achète ma première boîte d’aquarelles.
 
 Légères, les aquarelles s’emportent facilement dans le sac à dos. Depuis, elles ne me quittent plus : Chemin de Compostelle du Nord, Sentier Cathare, Route de la Pierre Sèche (GR 221), voyage en Amérique Centrale, Arizona Trail, Cretan Way, Ladakh,… Les carnets de voyage se succèdent et m’offrent un nouveau regard sur le monde.
 
@@ -27,12 +29,12 @@ En 2024, ma première professeure d’aquarelle, devenue ma mentor, m’encourag
 
 Au plaisir de vous rencontrer, pinceaux à la main !
 
-![Approche pédagogique](/_images/Approche%20p%C3%A9dagogique.webp)
+{% image src="/_images/approche-pedagogique.webp", alt="Approche pédagogique" %}
 
-Embarquez avec moi pour ce voyage au pays des couleurs et de la transparence. Nous allons cheminer ensemble vers un nouveau regard sur ce qui nous entoure et une présence à soi renforcée. Vous vivrez ce moment de perception intense du monde à travers vos sens, la dépose des pigments de couleurs sur le papier et le jeu imprévisible de l'eau. 
+Embarquez avec moi pour ce voyage au pays des couleurs et de la transparence. Nous allons cheminer ensemble vers un nouveau regard sur ce qui nous entoure et une présence à soi renforcée. Vous vivrez ce moment de perception intense du monde à travers vos sens, la dépose des pigments de couleurs sur le papier et le jeu imprévisible de l'eau.
 
 Arrive ce moment suspendu où les attentes de résultat s'évanouissent. Ne reste que la joie pure d'être simplement là. Sur le papier s'inscrivent l'émotion du moment et le souvenir de l'instant...
 
-La marche et toutes les autres approches par le mouvement ont pour objectif de vous aider à atteindre l'état de détente et de relaxation favorable à l'apprentissage . Les conseils techniques que je vous prodiguerai (si vous le souhaitez) visent à vous permettre de fluidifier votre trait, afin que vous puissiez vous concentrer pleinement sur ce que vous voyez et ressentez. 
+La marche et toutes les autres approches par le mouvement ont pour objectif de vous aider à atteindre l'état de détente et de relaxation favorable à l'apprentissage . Les conseils techniques que je vous prodiguerai (si vous le souhaitez) visent à vous permettre de fluidifier votre trait, afin que vous puissiez vous concentrer pleinement sur ce que vous voyez et ressentez.
 
 Je suis également formée à la communication non-violente, à la gestion de groupes et au coaching individuel, ce qui me permet d'accompagner le groupe et les individus dans un cadre constructif et bienveillant.

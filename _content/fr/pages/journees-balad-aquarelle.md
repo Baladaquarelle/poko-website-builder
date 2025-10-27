@@ -8,8 +8,10 @@ status: published
 name: Journées Balad’aquarelle
 eleventyNavigation:
   order: 20
+vars: {}
 ---
-# ![](/_images/Journ%C3%A9es%20Balad%E2%80%99aquarelle%20%281%29.webp)
+
+{% image src="/_images/journees-balad-aquarelle-2.webp", alt="Journées Balad'aquarelle", wrapper="h1" %}
 
 Offre(-toi) une parenthèse artistique au cœur de la nature.
 
@@ -43,4 +45,4 @@ Alors j’espère qu’à la lecture de ces quelques lignes, tu te diras “alle
 
 #### _Comment s’inscrire?_
 
-Vérifie sur la [page agenda](https://www.voyage-aquarelle.be/fr/agenda/) la date ou les dates qui te conviennent et inscris-toi via le lien mentionné. Il est aussi possible d'organiser des[ Balad'aquarelle à la demande sur-mesure](https://www.voyage-aquarelle.be/fr/stages-et-journees-speciales-ou-sur-mesure/).
+Vérifie sur la [page agenda](/fr/agenda/) la date ou les dates qui te conviennent et inscris-toi via le lien mentionné. Il est aussi possible d'organiser des[ Balad'aquarelle à la demande sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/).

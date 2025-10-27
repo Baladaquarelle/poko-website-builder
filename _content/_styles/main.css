@@ -1,0 +1,5 @@
+@import "_ctx.css";
+
+:root {
+  --width-footer: var(--width-prose);
+}

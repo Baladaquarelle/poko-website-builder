@@ -9,7 +9,7 @@ name: Matériel
 eleventyNavigation:
   order: 40
 ---
-# ![](/_images/Le%20mat%C3%A9riel%20d%E2%80%99aquarelle%20%281%29.webp)
+{% image src="/_images/le-materiel-d-aquarelle-1.webp", alt="Le matériel d'aquarelle" %}
 
 #### Zoom sur les couleurs
 
@@ -33,7 +33,9 @@ Cela dit, chaque artiste a ses préférences et peut-être que les tiennes sont 
 
 Parfois, les gens me demandent pourquoi j’ai choisi l’aquarelle. Eh bien tout simplement parce que le matériel nécessaire est léger et s’emporte facilement dans mon sac à dos, même quand je pars pour plusieurs semaines de randonnée.
 
-![Matériel d'aquarelle de voyage](/_images/Mon%20mat%C3%A9riel%20de%20voyage.webp)
+{# ![Matériel d'aquarelle de voyage](/_images/Mon%20mat%C3%A9riel%20de%20voyage.webp) #}
+
+{% image src="/_images/mon_materiel_de_voyage.webp", alt="Mon matériel de voyage" %}
 
 Si vous avez toujours rêvé de peindre en vacances, je vous partage ici ma liste de matériel minimaliste et quelques trucs et astuces.
 
