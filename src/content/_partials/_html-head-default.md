@@ -3,10 +3,6 @@
 <meta name="generator" content="{{ eleventy.generator }}" />
 <meta name="generator" content="poko" />
 
-{# JS detection #}
-
-<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-
 {# Metadata #}
 {% include "_metadata-default.md" ignore missing %}
 {% include "_metadata.md" ignore missing %}
@@ -15,22 +11,34 @@
 {% for link in templateTranslations %}
 
 <link rel="alternate" hreflang="{{link.lang}}" href="{{baseUrl}}{{link.url}}" />
-{% endfor %}
-{% if defaultLanguage %}
-<link rel="alternate" hreflang="x-default" href="{{baseUrl}}{{defaultLanguage.url}}" />
+{% if link.isDefault %}
+<link rel="alternate" hreflang="x-default" href="{{baseUrl}}{{link.url}}" />
 {% endif %}
+
+{% endfor %}
 
 {# Favicons #} {# TODO: Generate favicons, manifest, etc #}
 
-{# User HTML head injection #}
+{# HTML head injection #}
 
-{% include "_html-head.md" ignore missing %}
+{% partial "_html-head.md" %}
 {{ globalSettings.htmlHead | safe }}
+{# {% getBundle "html", "head" %} #}
 
-{# User CSS head injection #}
+{# Internal CSS: E-mail obfuscation + CSS head injection (from globalSettings) + bundle #}
 
-<style>{{ globalSettings.cssHead | safe }}</style>
+{{htmlExternalCssFiles | safe}}
 
-{# NOTE: E-mail obfuscation styles #}
+<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'external' %}">
 
-<style>a[href^="mailto:"] b {display: none;}</style>
+<style>
+{{ globalSettings.cssHead | safe }}
+{% getBundle "css" %}
+</style>
+
+{# JS: detection + bundle #}
+
+<script>
+(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+{% getBundle "js" %}
+</script>

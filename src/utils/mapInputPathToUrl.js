@@ -4,17 +4,19 @@ const dirsToStrip = [USER_DIR, "pages"];
 const langCodes = languages.map((lang) => lang.code);
 // const stripRegex = new RegExp(`^\/*(${dirsToStrip.join("|")})\/*`);
 
+// NOTE: Keep lang prefixes but strip undesirable path segments like "pages" or "_user-content"
 function stripPathSegment(path, segmentToStrip, allowedPrefixes = []) {
   // Create a regex that matches either:
   // 1. The segment at the beginning of the path
   // 2. The segment after an allowed prefix
   const prefixPattern = allowedPrefixes.length
-    ? `(^|^(${allowedPrefixes.join("|")})\/)`
-    : "^";
+    ? `(^|^(${allowedPrefixes.join("|")})/)`
+    : "(^)";
 
-  const regex = new RegExp(`${prefixPattern}${segmentToStrip}\/?`, "i");
+  const regex = new RegExp(`${prefixPattern}${segmentToStrip}/?`, "i");
+  const strippedPath = path.replace(regex, "$1");
 
-  return path.replace(regex, "$1");
+  return strippedPath;
 }
 
 const languagePrefixesMap = languages

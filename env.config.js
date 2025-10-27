@@ -4,12 +4,20 @@ import { resolve, join, relative } from "path";
 import fs from "node:fs";
 import yaml from "js-yaml";
 import { transformLanguage } from "./src/utils/languages.js";
+import {
+  mapStyleStringsToClassDef,
+  compileStyleContexts,
+  transformFontStacksContexts,
+  transformWidthsContext,
+  transformBrandColors,
+  transformPalette,
+  transformTypeScales,
+} from "./src/utils/transformStyles.js";
 
 const processEnv = typeof process !== "undefined" ? process.env : {};
 
-console.log({ processEnv });
-
 // GENERAL
+export const DEBUG = processEnv.DEBUG === "false" ? false : true;
 export const NODE_ENV = processEnv.NODE_ENV || "production";
 export const ELEVENTY_RUN_MODE = processEnv.ELEVENTY_RUN_MODE;
 // Can be "cdn", "npm", "<relative-path>"
@@ -63,12 +71,22 @@ export const LOCAL_BUILD = Boolean(
   !NETLIFY_BUILD && !CLOUDFLARE_BUILD && !VERCEL_BUILD
 );
 
-// @github.com:m4rrc0/poko-website-builder.git
+// const GITHUB_REPO_INFERRED = processEnv.GIT_REMOTES?.split("\n")
+//   ?.find((remote) => remote.includes("github.com"))
+//   ?.split(":")
+//   ?.pop()
+//   ?.split(".")?.[0];
+
+// const remoteLocalGit =
+//   "origin\tgit@github.com:m4rrc0/poko-website-builder.git (fetch)\norigin\tgit@github.com:m4rrc0/poko-website-builder.git (push)";
+// const remoteCFpages =
+//   "origin\thttps://x-a_c_c_e_s_s-t_o_k_e_n:g_h_s_11111111111111111111111111111111111@github.com/autre-ecole/poko-website-builder (fetch)\norigin\thttps://x-a_c_c_e_s_s-t_o_k_e_n:g_h_s_11111111111111111111111111111111111@github.com/autre-ecole/poko-website-builder (push)";
+
 const GITHUB_REPO_INFERRED = processEnv.GIT_REMOTES?.split("\n")
   ?.find((remote) => remote.includes("github.com"))
-  ?.split(":")
+  ?.split(/@github.com(\/|:)/)
   ?.pop()
-  ?.split(".")?.[0];
+  ?.split(/\.git\s|\s/)?.[0];
 
 // GITHUB Pages REPO inferrence
 export const GITHUB_GIT_REPO_OWNER = processEnv.GITHUB_REPOSITORY_OWNER;
@@ -113,12 +131,6 @@ export const REPO =
   (REPO_OWNER && REPO_NAME && `${REPO_OWNER}/${REPO_NAME}`) ||
   GITHUB_REPO_INFERRED;
 
-console.log({
-  GIT_REMOTES: processEnv.GIT_REMOTES,
-  GITHUB_REPO_INFERRED,
-  REPO,
-});
-
 export const PROD_BRANCH = processEnv.PROD_BRANCH || "main";
 // BRANCH inferrence
 // NOTE: Netlify uses BRANCH
@@ -136,6 +148,10 @@ export const BUILD_LEVEL =
   (BRANCH === PROD_BRANCH && ELEVENTY_RUN_MODE === "build" && "production") ||
   (BRANCH && PROD_BRANCH && ELEVENTY_RUN_MODE === "build" && "draft") ||
   "production"; // Better safe than sorry
+export const MINIFY =
+  processEnv.MINIFY === "false"
+    ? false
+    : BUILD_LEVEL === "production" || BUILD_LEVEL === "draft";
 
 // CMS
 export const CMS_AUTH_URL = processEnv.CMS_AUTH_URL;
@@ -154,17 +170,116 @@ assert(BRANCH, "[env] BRANCH is required");
 // User Config from CMS
 // Read file in ${WORKING_DIR_ABSOLUTE}/_data/globalSettings.yaml
 const globalSettingsPath = `${WORKING_DIR_ABSOLUTE}/_data/globalSettings.yaml`;
+const brandConfigPath = `${WORKING_DIR_ABSOLUTE}/_data/brand.yaml`;
 let globalSettings = {};
+let brandConfig = {};
 try {
   const globalSettingsYaml = fs.readFileSync(globalSettingsPath, "utf-8");
   globalSettings = yaml.load(globalSettingsYaml);
 } catch (error) {
   console.error("Error reading globalSettings.yaml:", error);
 }
-export { globalSettings };
+try {
+  const brandConfigYaml = fs.readFileSync(brandConfigPath, "utf-8");
+  brandConfig = yaml.load(brandConfigYaml);
+} catch (error) {
+  console.error("Error reading brandConfig.yaml:", error);
+  brandConfig = {
+    ctxCssImport: { filename: "_ctx.css" },
+    widthsContexts: [],
+    fontStacksContexts: [],
+    typeScales: [],
+    colors: [],
+    palettes: [],
+  };
+}
+export { globalSettings, brandConfig };
+// More specific useful global settings
 export const collections = globalSettings?.collections || [];
 export const languages =
   globalSettings?.languages?.map(transformLanguage) || [];
+
+// ----------- Brand styles computations
+// Widths contexts
+export const brandWidthsContexts = (brandConfig?.widthsContexts || []).map(
+  transformWidthsContext
+);
+export const brandWidthsContextsStyles = mapStyleStringsToClassDef(
+  brandWidthsContexts,
+  ".widths-"
+);
+
+// Font stacks contexts
+export const brandFontStacksContexts = transformFontStacksContexts(
+  brandConfig?.fontStacksContexts,
+  brandConfig?.customFontsImport
+);
+export const brandFontStacksContextsStyles = mapStyleStringsToClassDef(
+  brandFontStacksContexts,
+  ".font-stacks-"
+);
+
+// Type Scale
+export const brandTypeScales = transformTypeScales(brandConfig?.typeScales);
+export const brandTypeScalesStyles = mapStyleStringsToClassDef(
+  brandTypeScales,
+  ".type-scale-"
+);
+
+// Colors
+export const brandColors = transformBrandColors(brandConfig?.colors);
+export const brandColorsStyles = brandColors
+  .map((color) => color.stylesString)
+  .join("");
+
+// Palettes
+export const brandPalettes = (brandConfig?.palettes || []).map(
+  transformPalette
+);
+export const brandPalettesStyles = mapStyleStringsToClassDef(
+  brandPalettes,
+  ".palette-"
+);
+
+// Style Contexts
+export const brandStyleContexts = compileStyleContexts(
+  brandConfig?.styleContexts,
+  {
+    widthsContext: brandWidthsContexts,
+    fontStacksContext: brandFontStacksContexts,
+    typeScale: brandTypeScales,
+    palette: brandPalettes,
+  }
+);
+export const brandStyleContextsStyles = mapStyleStringsToClassDef(
+  brandStyleContexts,
+  ".ctx-",
+  0
+);
+
+// Styles to be injected
+export const brandRootStyles = [
+  ":root{",
+  brandWidthsContexts?.[0]?.stylesString || "",
+  brandFontStacksContexts?.[0]?.stylesString || "",
+  brandTypeScales?.[0]?.stylesString || "",
+  brandColorsStyles || "",
+  brandPalettes?.[0]?.stylesString || "",
+  "}",
+].join("");
+
+export const brandStyles = [
+  brandRootStyles || "",
+  brandStyleContextsStyles || "", // Comes before more precise styles
+  brandWidthsContextsStyles || "",
+  brandFontStacksContextsStyles || "",
+  brandTypeScalesStyles || "",
+  brandPalettesStyles || "",
+].join("\n");
+
+// TODO: Import ctx.css
+// Once ctx.css is a proper library, we can import layers individually from node_modules
+// Then chose if we want to inline styles in the head or import them as external styles
 
 // URLs
 // TODO: This is prone to forgetting to define the base url
@@ -181,21 +296,11 @@ export const BASE_URL = processEnv.BASE_URL?.replace(/\/+$/, "");
 export const DISPLAY_URL =
   processEnv.DISPLAY_URL?.replace(/\/+$/, "") || BASE_URL || PROD_URL;
 
-// export default {
-//   NETLIFY_BUILD,
-//   CLOUDFLARE_BUILD,
-//   VERCEL_BUILD,
-//   LOCAL_BUILD,
-//   VERCEL_GIT_REPO_OWNER,
-//   VERCEL_GIT_REPO_SLUG,
-//   REPOSITORY_URL,
-//   NETLIFY_REPO_NAME,
-//   NETLIFY_REPO_OWNER,
-//   NETLIFY_REPO,
-//   REPO_OWNER,
-//   REPO_NAME,
-//   REPO,
-//   BRANCH,
-//   PREFERRED_HOSTING,
-//   WORKING_DIR,
-// };
+if (DEBUG) {
+  console.log({ processEnv });
+  console.log({
+    GIT_REMOTES: processEnv.GIT_REMOTES,
+    GITHUB_REPO_INFERRED,
+    REPO,
+  });
+}
