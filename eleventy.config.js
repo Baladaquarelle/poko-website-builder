@@ -209,6 +209,11 @@ export default async function (eleventyConfig) {
       }`;
       const ctxInputPath = `src/styles/ctx.css`;
       if (toggleCopyCtxCss) {
+        // Make sure the destination folder exists
+        const destDir = path.dirname(ctxOutputPath);
+        if (!fs.existsSync(destDir)) {
+          fs.mkdirSync(destDir, { recursive: true });
+        }
         fs.copyFileSync(ctxInputPath, ctxOutputPath);
       } else {
         // 3. If "copy ctx.css" toggle is false, delete the ctx.css file from '_content/styles' directory

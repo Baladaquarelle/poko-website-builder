@@ -17,7 +17,8 @@ export async function image(args) {
     // imgAttrs,
     ...opts
   } = args;
-  const wrapperTag = wrapper ? wrapper.split(" ")[0] : "";
+  let wrapperTag = wrapper ? wrapper.split(" ")[0] : "";
+  wrapperTag = wrapperTag || (width ? "p" : "");
   // TODO: compute sizes from widths
   // TODO: Allow defining a wrapping tag??
   const options = deepmerge.all(
@@ -51,5 +52,5 @@ export async function image(args) {
   const html = await Image(src, options);
 
   // return `<p>${html}</p>`;
-  return wrapper ? `<${wrapper}>${html}</${wrapperTag}>` : html;
+  return wrapperTag ? `<${wrapperTag}>${html}</${wrapperTag}>` : html;
 }
