@@ -114,6 +114,20 @@ export default async function (eleventyConfig, pluginOptions) {
   // const renderFileShortcodeFn =
   //   eleventyConfig.nunjucks.asyncShortcodes.renderFile;
 
+  // RENDER MARKDOWN
+  async function renderMd(mdContent, data) {
+    const safeFilter = this.env.filters.safe;
+
+    let html = mdContent;
+
+    if (mdContent) {
+      html = await renderContentFilterFn.call(this, mdContent, "njk,md", data);
+    }
+
+    return safeFilter(html);
+  }
+
+  // RENDER LINKS
   async function renderLinks({ linksData, itemLayout, wrapperLayout }) {
     // const safeFilter = this.env.filters.safe;
 
@@ -202,6 +216,8 @@ export default async function (eleventyConfig, pluginOptions) {
     // return safeFilter(strings.join(""));
     return htmlLinks;
   }
+
+  eleventyConfig.addFilter("md", renderMd);
 
   await eleventyConfig.addAsyncShortcode("links", renderLinks);
 }

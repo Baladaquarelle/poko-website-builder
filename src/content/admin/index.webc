@@ -1,5 +1,6 @@
 ---
 layout: null
+eleventyExcludeFromCollections: true
 ---
 
 <!DOCTYPE html>
@@ -323,6 +324,7 @@ const currentCollections = JSON.parse('${currentCollections}')
             widget: "relation",
             collection: "partials",
             required: true,
+            value_field: "{{slug}}",
           },
           // {
           //   name: "data",
@@ -507,7 +509,7 @@ ${content}
             types: [
               {
                 name: "grid-fluid",
-                label: "Fluid Grid",
+                label: "Fluid Grid: Fluid sized blocks wrap automatically",
                 widget: "object",
                 required: false,
                 fields: [
@@ -525,11 +527,18 @@ ${content}
                     hint: "The gap between blocks (e.g. 1em [default], var(--step-2) [fluid type scale], 0 [no gap])",
                     required: false,
                   },
+                  {
+                    name: "class",
+                    label: "Class Names",
+                    widget: "string",
+                    hint: "Additional class names to add to the section (e.g. 'my-class another-class')",
+                    required: false,
+                  },
                 ],
               },
               {
                 name: "switcher",
-                label: "Switcher",
+                label: "Switcher: Switch from side by side to vertical display",
                 widget: "object",
                 required: false,
                 hint: "Switch between side by side and vertical display based on section width",
@@ -548,11 +557,62 @@ ${content}
                     hint: "The gap between blocks (e.g. 1em [default], var(--step-2) [fluid type scale], 0 [no gap])",
                     required: false,
                   },
+                  {
+                    name: "class",
+                    label: "Class Names",
+                    widget: "string",
+                    hint: "Additional class names to add to the section (e.g. 'my-class another-class')",
+                    required: false,
+                  },
+                ],
+              },
+              {
+                name: "fixed-fluid",
+                label: "Fixed-Fluid: 2 columns, fixed width on one side",
+                widget: "object",
+                required: false,
+                hint: "2 blocks side by side, fixed width on one side",
+                fields: [
+                  {
+                    name: "widthFixed",
+                    label: "Fixed column width",
+                    widget: "string",
+                    hint: "The width of the fixed sized column (e.g. 'calc(var(--width-prose) / 2.5)' [default], 20rem, 300px, ...)",
+                    required: false,
+                  },
+                  {
+                    name: "widthFluidMin",
+                    label: "Fluid column min width",
+                    widget: "string",
+                    hint: "The minimum width of the fluid column (e.g. '50%' [default], 20rem, 300px, ...)",
+                    required: false,
+                  },
+                  {
+                    name: "fixedRight",
+                    label: "Fixed column on the right",
+                    widget: "boolean",
+                    hint: "Place the fixed column on the right instead of left (default: false)",
+                    required: false,
+                  },
+                  {
+                    name: "gap",
+                    label: "Gap",
+                    widget: "string",
+                    hint: "The gap between blocks (e.g. 1em [default], var(--step-2) [fluid type scale], 0 [no gap])",
+                    required: false,
+                  },
+                  {
+                    name: "class",
+                    label: "Class Names",
+                    widget: "string",
+                    hint: "Additional class names to add to the section (e.g. 'my-class another-class')",
+                    required: false,
+                  },
                 ],
               },
               {
                 name: "cover",
-                label: "Cover",
+                label: "Cover: Fixed height section with optional padding",
                 widget: "object",
                 required: false,
                 fields: [
@@ -576,11 +636,18 @@ ${content}
                     hint: "The gap between blocks (e.g. 1em [default], var(--step-2) [fluid type scale], 0 [no gap])",
                     required: false,
                   },
+                  {
+                    name: "class",
+                    label: "Class Names",
+                    widget: "string",
+                    hint: "Additional class names to add to the section (e.g. 'my-class another-class')",
+                    required: false,
+                  },
                 ],
               },
               {
                 name: "custom",
-                label: "Custom",
+                label: "Custom: Use your own Section Layout",
                 widget: "object",
                 required: false,
                 fields: [],
@@ -699,88 +766,6 @@ ${content}
             hint: "",
             types: [
               {
-                name: "collections",
-                label: "Collections",
-                widget: "object",
-                required: false,
-                collapsed: false,
-                summary: "{{collectionNames}}",
-                fields: [
-                  {
-                    name: "collectionNames",
-                    label: "Select whole collections",
-                    widget: "select",
-                    required: true,
-                    multiple: true,
-                    options: [
-                      { value: "all", label: "All Collections" },
-                      { value: "pages", label: "Pages" },
-                      ...(currentCollections || []).map((collection) => ({
-                        value: collection,
-                        label: collection
-                      }))
-                    ],
-                  },
-                ],
-              },
-              {
-                name: "tags",
-                label: "Tags",
-                widget: "object",
-                required: false,
-                collapsed: false,
-                summary: "{{collectionNames}}",
-                fields: [
-                  {
-                    name: "collectionNames",
-                    label: "Select Tags",
-                    widget: "relation",
-                    collection: "dataFiles",
-                    file: "translatedData",
-                    value_field: "tagsList.*.slug",
-                    display_fields: ["tagsList.*.name"],
-                    required: true,
-                    multiple: true,
-                  },
-                ],
-              },
-              {
-                name: "pages",
-                label: "Pages",
-                widget: "object",
-                required: false,
-                collapsed: false,
-                summary: "{{slugs}}",
-                fields: [
-                  {
-                    name: "slugs",
-                    label: "Select pages",
-                    widget: "relation",
-                    collection: "pages",
-                    required: true,
-                    multiple: true,
-                  },
-                ],
-              },
-              {
-                name: "articles",
-                label: "Articles",
-                widget: "object",
-                required: false,
-                collapsed: false,
-                summary: "{{slugs}}",
-                fields: [
-                  {
-                    name: "slugs",
-                    label: "Select articles",
-                    widget: "relation",
-                    collection: "articles",
-                    required: true,
-                    multiple: true,
-                  },
-                ],
-              },
-              {
                 name: "external",
                 label: "External link",
                 widget: "object",
@@ -829,6 +814,106 @@ ${content}
                   },
                 ],
               },
+              {
+                name: "collections",
+                label: "Collections",
+                widget: "object",
+                required: false,
+                collapsed: false,
+                summary: "{{collectionNames}}",
+                fields: [
+                  {
+                    name: "collectionNames",
+                    label: "Select whole collections",
+                    widget: "select",
+                    required: true,
+                    multiple: true,
+                    options: [
+                      { value: "all", label: "All Collections" },
+                      { value: "pages", label: "Pages" },
+                      ...(currentCollections || []).map((collection) => ({
+                        value: collection,
+                        label: collection
+                      }))
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "tags",
+                label: "Tags",
+                widget: "object",
+                required: false,
+                collapsed: false,
+                summary: "{{collectionNames}}",
+                fields: [
+                  {
+                    name: "collectionNames",
+                    label: "Select Tags",
+                    widget: "relation",
+                    collection: "dataFiles",
+                    file: "translatedData",
+                    value_field: "tagsList.*.slug",
+                    // display_fields: ["tagsList.*.name"],
+                    required: true,
+                    multiple: true,
+                  },
+                ],
+              },
+              {
+                name: "pages",
+                label: "Pages",
+                widget: "object",
+                required: false,
+                collapsed: false,
+                summary: "{{slugs}}",
+                fields: [
+                  {
+                    name: "slugs",
+                    label: "Select pages",
+                    widget: "relation",
+                    collection: "pages",
+                    required: true,
+                    multiple: true,
+                  },
+                ],
+              },
+              {
+                name: "articles",
+                label: "Articles",
+                widget: "object",
+                required: false,
+                collapsed: false,
+                summary: "{{slugs}}",
+                fields: [
+                  {
+                    name: "slugs",
+                    label: "Select articles",
+                    widget: "relation",
+                    collection: "articles",
+                    required: true,
+                    multiple: true,
+                  },
+                ],
+              },
+              {
+                name: "articles",
+                label: "Articles",
+                widget: "object",
+                required: false,
+                collapsed: false,
+                summary: "{{slugs}}",
+                fields: [
+                  {
+                    name: "slugs",
+                    label: "Select articles",
+                    widget: "relation",
+                    collection: "articles",
+                    required: true,
+                    multiple: true,
+                  },
+                ],
+              },
             ],
           },
           {
@@ -864,6 +949,7 @@ ${content}
                     widget: "relation",
                     collection: "partials",
                     required: false,
+                    value_field: "{{slug}}",
                   },
                 ],
               },
@@ -904,6 +990,7 @@ ${content}
                     widget: "relation",
                     collection: "partials",
                     required: false,
+                    value_field: "{{slug}}",
                   },
                 ],
               },
@@ -950,6 +1037,24 @@ ${content}
           return `TEST`;
         },
       });
+
+    </script>
+
+    <script type="module" webc:raw>
+      import * as defaultEditorComponents from "./defaultEditorComponents.js";
+      const decNames = Object.keys(defaultEditorComponents)
+      console.log(decNames, defaultEditorComponents);
+      decNames.forEach(name => {
+        CMS.registerEditorComponent(defaultEditorComponents[name]);
+      })
+    </script>
+    <script type="module" webc:raw>
+      import * as userEditorComponents from "./userEditorComponents.js";
+      const uecNames = Object.keys(userEditorComponents)
+      console.log(uecNames, userEditorComponents);
+      uecNames.forEach(name => {
+        CMS.registerEditorComponent(userEditorComponents[name]);
+      })
     </script>
 
 <!--- BACKUP

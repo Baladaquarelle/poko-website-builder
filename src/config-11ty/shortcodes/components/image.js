@@ -48,7 +48,9 @@ export async function image(args) {
   if (!srcRaw) {
     return "<div>Please provide an image source</div>";
   }
-  const src = `${WORKING_DIR}/${srcRaw}`.replace(/\/+/g, "/");
+  const src = srcRaw.startsWith("/")
+    ? `${WORKING_DIR}/${srcRaw}`.replace(/\/+/g, "/")
+    : srcRaw;
   const html = await Image(src, options);
 
   // return `<p>${html}</p>`;

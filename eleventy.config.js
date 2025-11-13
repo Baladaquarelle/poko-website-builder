@@ -5,15 +5,20 @@ import yaml from "js-yaml";
 // import Nunjucks from "nunjucks";
 import { transform as lightningTransform } from "lightningcss";
 
-// -------- Plugins
+// -------- Plugins External
 import directoryOutputPlugin from "@11ty/eleventy-plugin-directory-output";
 import { RenderPlugin, IdAttributePlugin, I18nPlugin } from "@11ty/eleventy";
 import Fetch from "@11ty/eleventy-fetch";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginWebc from "@11ty/eleventy-plugin-webc";
-import pluginIcons from "eleventy-plugin-icons";
-// import pluginMarkdoc from "@m4rrc0/eleventy-plugin-markdoc";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import pluginRobotsTxt from "eleventy-plugin-robotstxt";
+import pluginSitemap from "@quasibit/eleventy-plugin-sitemap";
+import pluginIcons from "eleventy-plugin-icons";
+import pluginCodeblocks from "@code-blocks/eleventy-plugin";
+import pluginCodeBlocksCharts from "@code-blocks/charts";
+
+// -------- Plugins Internal
 import { imageTransformOptions } from "./src/config-11ty/plugins/imageTransform.js";
 import yamlData from "./src/config-11ty/plugins/yamlData/index.js";
 import cmsConfigPlugin from "./src/config-11ty/plugins/cms-config/index.js";
@@ -23,7 +28,7 @@ import populateInputDir from "./src/config-11ty/plugins/populateInputDir/index.j
 import partialsPlugin from "./src/config-11ty/plugins/partials/index.js";
 import buildExternalCSS from "./src/config-11ty/plugins/buildExternalCSS/index.js";
 import pluginUnoCSS from "./src/config-11ty/plugins/plugin-eleventy-unocss/index.js";
-import renderLinksPlugin from "./src/config-11ty/plugins/renderLinks/index.js";
+import customRenderersPlugin from "./src/config-11ty/plugins/customRenderers/index.js";
 // import keystaticPassthroughFiles from './src/config-11ty/plugins/keystaticPassthroughFiles/index.js';
 // -------- Plugins Markdown
 import markdownItContainer from "markdown-it-container";
@@ -50,8 +55,14 @@ import {
   FILES_OUTPUT_DIR,
   BASE_URL,
   PROD_URL,
+  statusesToUnrender,
+  allLanguages,
   languages,
+  defaultLanguage,
+  defaultLangCode,
+  unrenderedLanguages,
   brandConfig,
+  inlineAllStyles,
   brandStyles,
 } from "./env.config.js";
 import eleventyComputed from "./src/data/eleventyComputed.js";
@@ -90,15 +101,6 @@ if (DEBUG) {
 
 // TODOS:
 // - Look at persisting images in cache between builds: https://github.com/11ty/eleventy-img/issues/285
-
-const defaultLanguage = languages.find((lang) => lang.isWebsiteDefault);
-const defaultLangCode = defaultLanguage?.code || "en";
-
-const statusesToUnrender =
-  BUILD_LEVEL === "production" ? ["inactive", "draft"] : ["inactive"];
-const unrenderedLanguages = languages
-  .filter((lang) => statusesToUnrender.includes(lang.status))
-  .map((lang) => lang.code);
 
 function shouldNotRender(data) {
   if (data.page.filePathStem.startsWith("/_")) {
@@ -171,6 +173,11 @@ export default async function (eleventyConfig) {
   // eleventyConfig.addWatchTarget(`${WORKING_DIR}/**/*`, { resetConfig: true });
   // eleventyConfig.watchIgnores.add(`${WORKING_DIR}/_styles/_ctx.css`);
   // eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addPassthroughCopy({
+    [`${WORKING_DIR}/_config/editorComponents.js`]:
+      "admin/userEditorComponents.js",
+  });
 
   // --------------------- Custom Nunjucks setup
   // TODO: Does this work as expected?
@@ -276,6 +283,7 @@ export default async function (eleventyConfig) {
         .use(markdownItContainer, "grid-fluid")
         .use(markdownItContainer, "cluster")
         .use(markdownItContainer, "switcher")
+        .use(markdownItContainer, "cover")
 
         // .use(markdownItContainer, {
         //   name: "@",
@@ -333,6 +341,67 @@ export default async function (eleventyConfig) {
   // --------------------- Bundles
   eleventyConfig.addBundle("html");
 
+  // --------------------- Global Data
+  eleventyConfig.addGlobalData("env", { ...env });
+  eleventyConfig.addGlobalData("fontServices", async () => {
+    const fontsource = await Fetch("https://api.fontsource.org/v1/fonts", {
+      duration: "10d",
+      type: "json",
+    });
+    return {
+      fontsource: { fonts: fontsource },
+    };
+  });
+  eleventyConfig.addGlobalData("baseUrl", BASE_URL);
+  eleventyConfig.addGlobalData("prodUrl", PROD_URL);
+  eleventyConfig.addGlobalData("layout", "base");
+  // eleventyConfig.addGlobalData("globalSettings", globalSettings);
+  eleventyConfig.addGlobalData("languages", languages);
+  eleventyConfig.addGlobalData("defaultLanguage", defaultLanguage);
+  eleventyConfig.addGlobalData("defaultLangCode", defaultLangCode);
+  eleventyConfig.addGlobalData("brandConfig", brandConfig);
+  eleventyConfig.addGlobalData("inlineAllStyles", inlineAllStyles);
+  eleventyConfig.addGlobalData("brandStyles", brandStyles);
+  // Computed Data
+  eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
+
+  // --------------------- Collections
+  eleventyConfig.addCollection("sitemap", function (collectionApi) {
+    return collectionApi.getAll().map((item, index, all) => {
+      const links =
+        languages.length < 2
+          ? undefined
+          : all
+              .filter((template) => {
+                return (
+                  (template.data.translationKey &&
+                    template.data.translationKey ===
+                      item.data.translationKey) ||
+                  (template.data.localizationKey &&
+                    template.data.localizationKey === item.data.localizationKey)
+                );
+              })
+              .map((i) => {
+                return {
+                  url: i.page.url,
+                  lang: i.data.lang,
+                };
+              });
+
+      return {
+        url: item.url,
+        date: item.date,
+        data: {
+          ...item.data,
+          sitemap: {
+            ...item.data.sitemap,
+            links,
+          },
+        },
+      };
+    });
+  });
+
   // --------------------- Plugins Early
   eleventyConfig.addPlugin(directoryOutputPlugin);
   eleventyConfig.addPlugin(RenderPlugin);
@@ -383,6 +452,31 @@ export default async function (eleventyConfig) {
       ],
     },
   });
+  console.log({ BUILD_LEVEL, BASE_URL });
+  /** @type {import("eleventy-plugin-robotstxt/typedefs.js").EleventyPluginRobotsTxtOptions} */
+  const eleventyPluginRobotsTxtOptions =
+    BUILD_LEVEL === "production"
+      ? {
+          frontMatterOverrides: { layout: null },
+          sitemapURL: `${BASE_URL}/sitemap.xml`,
+          // Rely on on-page 'noindex' tags so we make sure crawling is allowed
+          rules: new Map([
+            ["*", [{ allow: "/" }, { disallow: "/admin/config.json" }]],
+          ]),
+        }
+      : {
+          frontMatterOverrides: { layout: null },
+          sitemapURL: `${BASE_URL}/sitemap.xml`,
+          // shouldBlockAIRobots: true,
+          rules: new Map([["*", [{ disallow: "/" }]]]),
+        };
+  eleventyConfig.addPlugin(pluginRobotsTxt, eleventyPluginRobotsTxtOptions);
+  // NOTE: We only want 'published' pages in the sitemap
+  eleventyConfig.addPlugin(pluginSitemap, {
+    sitemap: {
+      hostname: BASE_URL,
+    },
+  });
   eleventyConfig.addPlugin(pluginIcons, {
     sources: [
       {
@@ -407,6 +501,9 @@ export default async function (eleventyConfig) {
       class: (name, source) => `icon icon-${source} icon-${name}`,
     },
   });
+
+  eleventyConfig.addPlugin(pluginCodeblocks([pluginCodeBlocksCharts]));
+
   await eleventyConfig.addPlugin(buildExternalCSS);
   // TODO: import those classes from a data file
   eleventyConfig.addPlugin(htmlClassesTransform, {
@@ -451,7 +548,7 @@ export default async function (eleventyConfig) {
       "src/content",
     ],
   });
-  // Populate Default Content with virtual templates
+  // Partials expand on the renderFile shortcode
   await eleventyConfig.addPlugin(partialsPlugin, {
     dirs: [
       path.join(WORKING_DIR, PARTIALS_DIR),
@@ -459,6 +556,7 @@ export default async function (eleventyConfig) {
     ],
     shortcodeAliases: [
       "partial",
+      "component",
       // "section"
     ],
   });
@@ -468,29 +566,6 @@ export default async function (eleventyConfig) {
 
   // --------------------- Layouts
   eleventyConfig.addLayoutAlias("base", "base.html");
-
-  // --------------------- Global Data
-  eleventyConfig.addGlobalData("env", { ...env });
-  eleventyConfig.addGlobalData("fontServices", async () => {
-    const fontsource = await Fetch("https://api.fontsource.org/v1/fonts", {
-      duration: "10d",
-      type: "json",
-    });
-    return {
-      fontsource: { fonts: fontsource },
-    };
-  });
-  eleventyConfig.addGlobalData("baseUrl", BASE_URL);
-  eleventyConfig.addGlobalData("prodUrl", PROD_URL);
-  eleventyConfig.addGlobalData("layout", "base");
-  // eleventyConfig.addGlobalData("globalSettings", globalSettings);
-  eleventyConfig.addGlobalData("languages", languages);
-  eleventyConfig.addGlobalData("defaultLanguage", defaultLanguage);
-  eleventyConfig.addGlobalData("defaultLangCode", defaultLangCode);
-  eleventyConfig.addGlobalData("brandConfig", brandConfig);
-  eleventyConfig.addGlobalData("brandStyles", brandStyles);
-  // Computed Data
-  eleventyConfig.addGlobalData("eleventyComputed", eleventyComputed);
 
   // --------------------- Filters
   // Slug
@@ -563,7 +638,7 @@ export default async function (eleventyConfig) {
   // });
 
   // Deferred Config
-  await eleventyConfig.addPlugin(renderLinksPlugin);
+  await eleventyConfig.addPlugin(customRenderersPlugin);
 
   await eleventyConfig.addPlugin(async function (eleventyConf) {
     eleventyConf.versionCheck(">=3.0.0-alpha.1");

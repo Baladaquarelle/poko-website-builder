@@ -9,6 +9,7 @@ export default async function (eleventyConfig, pluginOptions) {
     pluginOptions || {};
   const outdir = `${dir.output}/${outputDir}`;
 
+  let externalStylesInline = null;
   let entrypoints = await fglob(`${dir.input}/${inputGlob}`);
   // Remove entrypoint files that start with an underscore
   entrypoints = entrypoints.filter(
@@ -27,8 +28,6 @@ export default async function (eleventyConfig, pluginOptions) {
     .map((file) => `<link rel="stylesheet" href="/${file.out}">`)
     .join("\n");
 
-  eleventyConfig.addGlobalData("htmlExternalCssFiles", htmlExternalCssFiles);
-
   if (Array.isArray(entrypoints) && typeof entrypoints[0] === "string") {
     await bunBuild({
       entrypoints,
@@ -38,11 +37,31 @@ export default async function (eleventyConfig, pluginOptions) {
       // plugins: [cssTransformPlugin],
       minify: MINIFY,
       cssChunking: true,
-    }).catch((e) => {
-      console.error(e);
-      throw e;
-    });
+    })
+      .catch((e) => {
+        console.error(e);
+        throw e;
+      })
+      .then(async ({ outputs, success, logs }) => {
+        // Read content of each output file
+        const fileContents = await Promise.all(
+          outputs.map(async (output) => {
+            const content = await Bun.file(output.path).text();
+            return {
+              path: output.path,
+              content,
+            };
+          })
+        );
+
+        externalStylesInline = fileContents
+          .map((file) => file.content)
+          .join("");
+      });
   }
+
+  eleventyConfig.addGlobalData("htmlExternalCssFiles", htmlExternalCssFiles);
+  eleventyConfig.addGlobalData("externalStylesInline", externalStylesInline);
 
   // TODO: add global data for generated stylesheets urls ? (Should we account for drafts? Probably not as we can use underscores in file names?)
   // TODO: integrate global variables in the first stylesheet generated

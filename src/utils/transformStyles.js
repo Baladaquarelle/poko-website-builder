@@ -1,4 +1,4 @@
-import { calculateTypeScale } from "utopia-core";
+import { calculateTypeScale, calculateClamps } from "utopia-core";
 
 // prettier-ignore
 export const nativeFontStacks = {
@@ -162,7 +162,31 @@ export function transformTypeScale(typeScaleDef) {
   };
 
   const typeScale = calculateTypeScale(vars);
-  const stylesString = typeScale
+
+  // Custom Clamps based on original steps
+  const pairs = typeScaleDef?.customSteps?.map((step) => {
+    const minFontSize = typeScale.find(
+      (item) => item.label === step.startStep
+    )?.minFontSize;
+    const maxFontSize = typeScale.find(
+      (item) => item.label === step.endStep
+    )?.maxFontSize;
+
+    return [minFontSize, maxFontSize];
+  });
+  const clamps = pairs?.length
+    ? calculateClamps({
+        minWidth: vars.minWidth,
+        maxWidth: vars.maxWidth,
+        pairs,
+      }).map((clamp, i) => ({
+        ...clamp,
+        label: `${typeScaleDef?.customSteps[i].startStep}-${typeScaleDef?.customSteps[i].endStep}`,
+      }))
+    : [];
+
+  // Turn clamp steps into CSS variables
+  const stylesString = [...typeScale, ...clamps]
     .map(({ label, clamp }) => `--${vars.prefix}-${label}:${clamp};`)
     .join("");
 
