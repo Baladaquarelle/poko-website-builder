@@ -10,7 +10,6 @@ eleventyNavigation:
   order: 10
 vars: {}
 ---
-
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
 #### Dimanche 23 novembre et samedi 13 décembre 2025 : Stages “intuition et créativité”
@@ -41,7 +40,7 @@ PAF : 45€ (matériel compris) par atelier - maximum 8 personnes
 
 [Je m'inscris à un atelier carnet de voyage.](https://forms.gle/GJofbXiWXaRzXz3x7)
 
-#### "Oh zut, je ne suis disponible aux dates proposées (ou alors j’en veux +)"
+#### 
 
 {% image src="/_images/autres-opportunites.webp" %}
 
