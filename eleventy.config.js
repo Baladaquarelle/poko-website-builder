@@ -174,11 +174,6 @@ export default async function (eleventyConfig) {
   // eleventyConfig.watchIgnores.add(`${WORKING_DIR}/_styles/_ctx.css`);
   // eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addPassthroughCopy({
-    [`${WORKING_DIR}/_config/editorComponents.js`]:
-      "admin/userEditorComponents.js",
-  });
-
   // --------------------- Custom Nunjucks setup
   // TODO: Does this work as expected?
   // NOTE: This is a workaround because virtual templates does not work for includes
@@ -516,13 +511,17 @@ export default async function (eleventyConfig) {
   await eleventyConfig.addPlugin(pluginUnoCSS);
 
   // --------------------- Populate files and default content
-  // Populate Default Content: Copy `src/content-static/` to `dist`
-  eleventyConfig.addPassthroughCopy({ "src/content-static": "/" });
-  // Copy User's files: `src/content-static/` to `dist`
   eleventyConfig.addPassthroughCopy({
+    // Copy User's editorComponents.js to be used in the CMS
+    [`${WORKING_DIR}/_config/editorComponents.js`]:
+      "admin/userEditorComponents.js",
+    // Populate Default Content: Copy `src/content-static/` to `dist`
+    "src/content-static": "/",
+    // Copy User's files: `src/content-static/` to `dist`
     [`${WORKING_DIR}/_files`]: "/assets/files/",
-  });
-  eleventyConfig.addPassthroughCopy({
+    [`${WORKING_DIR}/_files/_redirects`]: "_redirects",
+    [`${WORKING_DIR}/_files/_headers`]: "_headers",
+    // All CSS files to assets
     [`${WORKING_DIR}/*.css`]: "/assets/styles/",
   });
   // Copy Sveltia CMS if not using CDN
