@@ -8,21 +8,20 @@ status: published
 name: Agenda
 eleventyNavigation:
   order: 10
-vars: {}
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
-#### Dimanche 23 novembre et samedi 13 décembre 2025 : Stages “intuition et créativité”
+#### Dimanche 23 novembre (COMPLET) et (nouvelle date bientôt disponible) : Stages “intuition et créativité”
 
 **Horaires** : 10h à 17h
 
 **Lieu** : La Hulpe, dans une yourte
 
-Suite au succès de la journée du 27 septembre et aux demandes de prévoir une nouvelle date, Helena et Emilie vous invitent à les rejoindre le **23 novembre et/ou le 13 décembre aux Collines de Babelle**.
+Suite au succès de la journée du 27 septembre et aux demandes de prévoir une nouvelle date, Helena et Emilie vous invitent à les rejoindre le **23 novembre et/ou le (date à définir) aux Collines de Babelle**.
 
 Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
 
-PAF : 80€ (matériel compris) par journée - maximum 12 personnes
+PAF : 80€ (matériel compris) par journée - maximum 10 personnes
 
 [Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
 
