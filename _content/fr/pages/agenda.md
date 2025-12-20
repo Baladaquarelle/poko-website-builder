@@ -8,16 +8,15 @@ status: published
 name: Agenda
 eleventyNavigation:
   order: 10
+vars: {}
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
-#### Dimanche 23 novembre (COMPLET) et (nouvelle date bientôt disponible) : Stages “intuition et créativité”
+#### Samedi 30 mai : Stage “intuition et créativité”
 
 **Horaires** : 10h à 17h
 
 **Lieu** : La Hulpe, dans une yourte
-
-Suite au succès de la journée du 27 septembre et aux demandes de prévoir une nouvelle date, Helena et Emilie vous invitent à les rejoindre le **23 novembre et/ou le (date à définir) aux Collines de Babelle**.
 
 Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
 
@@ -27,7 +26,7 @@ PAF : 80€ (matériel compris) par journée - maximum 10 personnes
 
 {% image src="/_images/stages-intuition-et-creativite-2.webp" %}
 
-#### Samedi 29 novembre 2025, samedi 10 janvier 2026 et samedi 24 janvier 2026 : atelier carnet de voyage.
+#### Samedi 10 janvier 2026 (COMPLET) et samedi 24 janvier 2026 : atelier carnet de voyage.
 
 **Horaires** : 14h à 17h
 
