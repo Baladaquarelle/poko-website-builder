@@ -8,9 +8,7 @@ status: published
 name: A propos
 eleventyNavigation:
   order: 50
-vars: {}
 ---
-
 #### **Qui suis-je ?**
 
 Emilie, marcheuse et aquarelliste (entre autres)
@@ -35,6 +33,6 @@ Embarquez avec moi pour ce voyage au pays des couleurs et de la transparence. No
 
 Arrive ce moment suspendu où les attentes de résultat s'évanouissent. Ne reste que la joie pure d'être simplement là. Sur le papier s'inscrivent l'émotion du moment et le souvenir de l'instant...
 
-La marche et toutes les autres approches par le mouvement ont pour objectif de vous aider à atteindre l'état de détente et de relaxation favorable à l'apprentissage . Les conseils techniques que je vous prodiguerai (si vous le souhaitez) visent à vous permettre de fluidifier votre trait, afin que vous puissiez vous concentrer pleinement sur ce que vous voyez et ressentez.
+La marche et toutes les autres approches par le mouvement ont pour objectif de vous aider à atteindre l'état de détente et de relaxation favorable à l'apprentissage. Les conseils techniques que je vous prodiguerai (si vous le souhaitez) visent à vous permettre de fluidifier votre trait, afin que vous puissiez vous concentrer pleinement sur ce que vous voyez et ressentez.
 
 Je suis également formée à la communication non-violente, à la gestion de groupes et au coaching individuel, ce qui me permet d'accompagner le groupe et les individus dans un cadre constructif et bienveillant.
