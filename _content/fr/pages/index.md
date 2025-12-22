@@ -11,8 +11,10 @@ eleventyNavigation:
 ---
 {% image src="/_images/balad-aquarelle-logo-rvb-500px-02.webp", alt="Balad'aquarelle", width="200", wrapper="h1" %}
 
-Bienvenue sur le tout nouveau site internet de Balad'aquarelle - voyage et aquarelle. Ce site est en construction et je vous remercie déjà pour votre compréhension et votre patience.
+Si vous rêvez d'apprendre l'aquarelle de randonnée (les carnets de voyage à l'aquarelle en version légère) ou de vous perfectionner dans cette technique, Balad'aquarelle est fait pour vous !
 
-J'espère que vous y trouverez les informations que vous cherchez. Bonne découverte!
+Rejoignez-nous pour une journée de rando et d'aquarelle, une après-midi "carnet de voyage" ou une journée spéciale. 
+
+A bientôt !
 
 {% image src="/_images/une_aquarelle_n_est_pas_une_histoire_c_est_la_traduction_d_une_sensation_d_un_souvenir_d_un_etat_d_ame-hugo_pratt_1.webp" %}
