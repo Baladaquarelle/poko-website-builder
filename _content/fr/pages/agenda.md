@@ -8,23 +8,8 @@ status: published
 name: Agenda
 eleventyNavigation:
   order: 10
-vars: {}
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
-
-#### Samedi 30 mai : Stage “intuition et créativité”
-
-**Horaires** : 10h à 17h
-
-**Lieu** : La Hulpe, dans une yourte
-
-Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
-
-PAF : 80€ (matériel compris) par journée - maximum 10 personnes
-
-[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
-
-{% image src="/_images/stages-intuition-et-creativite-2.webp" %}
 
 #### Samedi 10 janvier 2026 (COMPLET) et samedi 24 janvier 2026 : atelier carnet de voyage.
 
@@ -38,10 +23,50 @@ PAF : 45€ (matériel compris) par atelier - maximum 8 personnes
 
 [Je m'inscris à un atelier carnet de voyage.](https://forms.gle/GJofbXiWXaRzXz3x7)
 
+#### Dimanche 17 mai 2026 : atelier spécial débutants
+
+**Horaires** : 14h à 16h30
+
+**Lieu** : Rixensart
+
+Si vous êtes débutant.e et que vous n'osez pas vous lancer sans avoir appris quelques bases techniques, cette matinée est faite pour vous.
+
+Vous y apprendrez à utiliser le matériel et comprendre les critères de choix de celui-ci (pinceau, papier et couleurs). De plus, vous découvrirez et pratiquerez les techniques et notions suivantes : technique sèche et humide, lavis en aplat et en dégradé, les valeurs, ouvrir des blancs et la perspective atmosphérique.
+
+**PAF** : 45€, matériel compris - maximum 5 personnes
+
 #### 
+
+#### Samedi 30 mai 2026 : Stage “intuition et créativité”
+
+**Horaires** : 10h à 17h
+
+**Lieu** : La Hulpe, dans une yourte
+
+Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
+
+PAF : 85€ (matériel compris) par journée - maximum 10 personnes
+
+[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
+
+{% image src="/_images/stages-intuition-et-creativite-2.webp" %}
+
+#### 
+
+#### Samedi 6 juin 2026 : Save the date stage “ânes et aquarelle”
+
+Informations à venir. 
+
+#### Dimanche 14 juin 2026 : journée Balad'aquarelle
+
+**Horaires** : 10h à 16h30
+
+**Lieu** : à préciser - Brabant Wallon ou alentours
+
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
+
+**PAF** : 65€ matériel compris - maximum 8 personnes
 
 {% image src="/_images/autres-opportunites.webp" %}
 
-Des dates supplémentaires pour la période à partir de mai 2026 seront publiées fin 2025.
-
-Et puis, il y a toujours la possibilité d’organiser une [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/).
+Pensez aussi à la [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) si vous disposez d'un groupe de minimum 5 personnes.
