@@ -8,6 +8,10 @@ status: published
 name: Accueil
 eleventyNavigation:
   order: 1
+metadata:
+  description: |-
+    Apprendre l'aquarelle de randonnée (les carnets de voyage à l'aquarelle en version légère) ou se perfectionner dans cette technique. 
+    Journées de rando et d'aquarelle, après-midis "carnet de voyage" ou journées sur-mesure.
 ---
 {% image src="/_images/balad-aquarelle-logo-rvb-500px-02.webp", alt="Balad'aquarelle", width="200", wrapper="h1" %}
 
