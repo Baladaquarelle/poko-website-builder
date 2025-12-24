@@ -45,7 +45,7 @@ Vous y apprendrez à utiliser le matériel et comprendre les critères de choix 
 
 Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
 
-PAF : 85€ (matériel compris) par journée - maximum 10 personnes
+PAF : 90€ (matériel compris) par journée - maximum 10 personnes
 
 [Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
 
