@@ -67,6 +67,16 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de 
 
 **PAF** : 65€ matériel compris - maximum 8 personnes
 
+#### Samedi 4 juillet 2026 : journée Balad'aquarelle
+
+**Horaires** : 10h à 16h30
+
+**Lieu** : à préciser - Brabant Wallon ou alentours
+
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
+
+**PAF** : 65€ matériel compris - maximum 8 personnes
+
 {% image src="/_images/autres-opportunites.webp" %}
 
 Pensez aussi à la [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) si vous disposez d'un groupe de minimum 5 personnes.
