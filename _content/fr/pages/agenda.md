@@ -8,7 +8,13 @@ status: published
 name: Agenda
 eleventyNavigation:
   order: 10
-vars: {}
+metadata:
+  description: |-
+    agenda des activités balad'aquarelle
+    stage intuition et créativité
+    atelier carnet de voyage 
+    ânes et aquarelle
+    atelier débutant
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
@@ -36,6 +42,8 @@ Vous y apprendrez à utiliser le matériel et comprendre les critères de choix 
 
 **PAF** : 45€, matériel compris - maximum 5 personnes
 
+[Je m'inscris à l'atelier spécial débutant.e](https://forms.gle/KGvoeKTaAEb8KJQ69)
+
 #### 
 
 #### Samedi 30 mai 2026 : Stage “intuition et créativité”
@@ -48,7 +56,7 @@ Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et t
 
 PAF : 90€ (matériel compris) par journée - maximum 10 personnes
 
-[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/2sPzxcP8dHA8mWax5)
+[Je m'inscris au stage intuition et créativité.](https://forms.gle/yE39F2GLF8iXpowS6)
 
 {% image src="/_images/stages-intuition-et-creativite-2.webp" %}
 
@@ -68,6 +76,8 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de 
 
 **PAF** : 65€ matériel compris - maximum 8 personnes
 
+[Je m'inscris à la journée Balad'aquarelle.](https://forms.gle/FhZyRGsQnwvbwYsj6)
+
 #### Samedi 4 juillet 2026 : journée Balad'aquarelle
 
 **Horaires** : 10h à 16h30
@@ -77,6 +87,8 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de 
 La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
 
 **PAF** : 65€ matériel compris - maximum 8 personnes
+
+[Je m'inscris à la journée Balad'aquarelle du 4 juillet.](https://forms.gle/uC9n7Afv954qV5NG8)
 
 {% image src="/_images/autres-opportunites.webp" %}
 
