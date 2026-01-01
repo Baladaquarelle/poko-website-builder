@@ -8,6 +8,7 @@ status: published
 name: Agenda
 eleventyNavigation:
   order: 10
+vars: {}
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
@@ -47,7 +48,7 @@ Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et t
 
 PAF : 90€ (matériel compris) par journée - maximum 10 personnes
 
-[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/fqc4fNgLsvseFbQh8)
+[Je souhaite m'inscrire à un stage "intuition et créativité".](https://forms.gle/2sPzxcP8dHA8mWax5)
 
 {% image src="/_images/stages-intuition-et-creativite-2.webp" %}
 
