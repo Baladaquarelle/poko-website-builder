@@ -18,7 +18,7 @@ metadata:
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
-#### Samedi 10 janvier 2026 (COMPLET) et samedi 24 janvier 2026 : atelier carnet de voyage.
+#### Samedi 10 janvier 2026 (COMPLET) et samedi 24 janvier 2026 : atelier carnet de voyage (COMPLET - liste d'attente).
 
 **Horaires** : 14h à 17h
 
