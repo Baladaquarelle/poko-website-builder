@@ -18,17 +18,7 @@ metadata:
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
-#### Samedi 10 janvier 2026 (COMPLET) et samedi 24 janvier 2026 : atelier carnet de voyage (COMPLET - liste d'attente).
-
-**Horaires** : 14h à 17h
-
-**Lieu** : La Hulpe, dans un atelier d'artiste
-
-Une demi-journée au chaud pour un atelier "carnet de voyage". De quoi vous mettre du soleil plein les yeux, quelle que soit la météo.
-
-PAF : 45€ (matériel compris) par atelier - maximum 8 personnes
-
-[Je m'inscris à un atelier carnet de voyage.](https://forms.gle/GJofbXiWXaRzXz3x7)
+#### 
 
 #### Dimanche 17 mai 2026 : atelier spécial débutants
 
@@ -36,7 +26,7 @@ PAF : 45€ (matériel compris) par atelier - maximum 8 personnes
 
 **Lieu** : Rixensart
 
-Si vous êtes débutant.e et que vous n'osez pas vous lancer sans avoir appris quelques bases techniques, cette matinée est faite pour vous.
+Si vous êtes débutant.e et que vous n'osez pas vous lancer sans avoir appris quelques bases techniques, cet atelier est fait pour vous.
 
 Vous y apprendrez à utiliser le matériel et comprendre les critères de choix de celui-ci (pinceau, papier et couleurs). De plus, vous découvrirez et pratiquerez les techniques et notions suivantes : technique sèche et humide, lavis en aplat et en dégradé, les valeurs, ouvrir des blancs et la perspective atmosphérique.
 
@@ -64,15 +54,15 @@ PAF : 90€ (matériel compris) par journée - maximum 10 personnes
 
 #### Samedi 6 juin 2026 : Save the date stage “ânes et aquarelle”
 
-Informations à venir. 
+- Atelier reporté -
 
 #### Dimanche 14 juin 2026 : journée Balad'aquarelle
 
 **Horaires** : 10h à 16h30
 
-**Lieu** : à préciser - Brabant Wallon ou alentours
+**Lieu** : Lasne (ou Rixensart/La Hulpe en fonction de la météo)
 
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupée de pauses "peinture sur le vif" en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
 
 **PAF** : 65€ matériel compris - maximum 8 personnes
 
