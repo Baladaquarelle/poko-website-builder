@@ -49,7 +49,7 @@ PAF : 90€ (matériel compris) par journée - maximum 10 personnes
 
 La journée "classique" : une balade de maximum 6 kilomètres, entrecoupée de pauses "peinture sur le vif" en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
 
-**PAF** : 65€ matériel compris - maximum 8 personnes
+**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
 
 [Je m'inscris à la journée Balad'aquarelle.](https://forms.gle/FhZyRGsQnwvbwYsj6)
 
@@ -61,7 +61,7 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupée de p
 
 La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
 
-**PAF** : 65€ matériel compris - maximum 8 personnes
+**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
 
 [Je m'inscris à la journée Balad'aquarelle du 4 juillet.](https://forms.gle/uC9n7Afv954qV5NG8)
 
@@ -75,9 +75,9 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de 
 
 On s'intéressera plus spécifiquement aux animaux : oiseaux, chevaux, et tout autre animal au gré des rencontres. Aucune compétence en dessin n'est requise !
 
-**PAF** : 65€ matériel compris - maximum 8 personnes
+**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
 
-[Je m'inscris à la journée Balad'aquarelle du 21 juillet.](https://forms.gle/uC9n7Afv954qV5NG8)
+[Je m'inscris à la journée Balad'aquarelle du 20 juillet.](https://forms.gle/ZuiFck4aLgc1Fux3A)
 
 #### Samedi 1er et dimanche 2 août 2026 : stage à Lobbes 
 
