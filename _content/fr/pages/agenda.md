@@ -44,7 +44,7 @@ La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de 
 
 [Je m'inscris à la journée Balad'aquarelle du 4 juillet.](https://forms.gle/uC9n7Afv954qV5NG8)
 
-#### Lundi 20 juillet 2026 : journée Balad'aquarelle sur le thème des spéciale "animaux"
+#### Lundi 20 juillet 2026 : journée Balad'aquarelle sur le thème des animaux
 
 **Horaires** : 10h à 16h30
 
