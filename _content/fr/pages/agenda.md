@@ -15,31 +15,10 @@ metadata:
     atelier carnet de voyage 
     ânes et aquarelle
     atelier débutant
-vars: {}
 ---
 {% image src="/_images/agenda-complet-des-activites-1.webp" %}
 
 #### 
-
-#### Samedi 30 mai 2026 : Stage “intuition et créativité”
-
-**Horaires** : 10h à 17h
-
-**Lieu** : La Hulpe, dans une yourte
-
-Nous alternerons Yin yoga (un yoga doux littéralement accessible à toutes et tous), aquarelle et voyage sonore. Lâcher-prise, plaisir de peindre et de bouger dans un écrin de verdure : que du bonheur en perspective!
-
-PAF : 90€ (matériel compris) par journée - maximum 10 personnes
-
-[Je m'inscris au stage intuition et créativité.](https://forms.gle/yE39F2GLF8iXpowS6)
-
-{% image src="/_images/stages-intuition-et-creativite-2.webp" %}
-
-#### 
-
-#### Samedi 6 juin 2026 : Save the date stage “ânes et aquarelle”
-
-- Atelier reporté 
 
 #### Dimanche 14 juin 2026 : journée Balad'aquarelle
 
