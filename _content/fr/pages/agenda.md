@@ -20,29 +20,7 @@ metadata:
 
 #### 
 
-#### Dimanche 14 juin 2026 : journée Balad'aquarelle
-
-**Horaires** : 10h à 16h30
-
-**Lieu** : Lasne (ou Rixensart/La Hulpe en fonction de la météo)
-
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupée de pauses "peinture sur le vif" en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
-
-**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
-
-[Je m'inscris à la journée Balad'aquarelle.](https://forms.gle/FhZyRGsQnwvbwYsj6)
-
-#### Samedi 4 juillet 2026 : journée Balad'aquarelle
-
-**Horaires** : 10h à 16h30
-
-**Lieu** : à préciser - Brabant Wallon ou alentours
-
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pause peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
-
-**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
-
-[Je m'inscris à la journée Balad'aquarelle du 4 juillet.](https://forms.gle/uC9n7Afv954qV5NG8)
+#### 
 
 #### Lundi 20 juillet 2026 : journée Balad'aquarelle sur le thème des animaux
 
