@@ -50,7 +50,7 @@ La technique sera travaillée  par le biais d'explications communes courtes et c
 
 Nous serons accueilli·es chez Colette, aquarelliste et randonneuse passionnée. Possibilité de camper sur place, de loger dans la région ou de rentrer chez soi le soir. Ambiance simple, chaleureuse et conviviale. 
 
-**PAF** : 130€ (les élèves amènent leurs propres aquarelles et pinceaux - le papier est fourni - possibilité de mise à disposition des aquarelles et pinceaux pour un montant de 20€), pour les 2 journées de cours. 
+**PAF** : 130€ (les élèves amènent leurs propres aquarelles et pinceaux - le papier est fourni - possibilité de mise à disposition des aquarelles et pinceaux pour un montant de 20€). 
 
 La participation aux frais de nourriture (30€) et de camping (5€) seront à verser en liquide à la propriétaire des lieux. 
 
