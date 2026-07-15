@@ -28,7 +28,7 @@ metadata:
 
 **Lieu** : La Hulpe
 
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails. 
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails sur l'organisation de ces journées et l'onglet "[A propos](https://www.voyage-aquarelle.be/fr/a-propos/)" pour l'approche pédagogique. 
 
 On s'intéressera plus spécifiquement aux animaux : oiseaux, chevaux, et tout autre animal au gré des rencontres. Aucune compétence en dessin n'est requise !
 
@@ -56,7 +56,35 @@ La participation aux frais de nourriture (30€) et de camping (5€) seront à 
 
 La fiche complète vous est fournie sur demande (m'écrire à baladaquarelle@gmail.com).
 
-[Inscription au stage ](https://forms.gle/B9u8jYoNqhLJkxm9A)
+[Je m'inscris au stage des 1 et 2 août  ](https://forms.gle/zG6g2G9nxiFk9NF57)
+
+#### **Dimanche 27 septembre 2026 : Balad’aquarelle classique&#160;**
+
+**Horaires** : 10h à 16h30
+
+**Lieu** : Rixensart
+
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails sur l'organisation de ces journées et l'onglet "[A propos](https://www.voyage-aquarelle.be/fr/a-propos/)" pour l'approche pédagogique. 
+
+PAF : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
+
+[Je m'inscris à la journée Balad'aquarelle du 2](https://docs.google.com/forms/d/e/1FAIpQLScibCvq67dArrFdz31MLI21Z3_OrGX8a-tMRua3kb-nntxikQ/viewform?usp=header)[7 septembre](https://docs.google.com/forms/d/e/1FAIpQLScibCvq67dArrFdz31MLI21Z3_OrGX8a-tMRua3kb-nntxikQ/viewform?usp=header)
+
+{% image src="/_images/pub-yourte.webp" %}
+
+#### **Dimanche 11 octobre 2026 : Atelier aquarelle et Yin yoga&#160;**
+
+**Horaires** : 10h à 17h
+
+**Lieu** : La Hulpe, dans une yourte
+
+A la demande générale, voici la quatrième édition de cette journée d’exception qui conjugue créativité, mouvement et relaxation. Un voyage au cœur de vos cinq sens, avec l’aquarelle comme moyen d’explorer et d’exprimer vos ressentis.
+
+La journée est organisée en collaboration avec Helena, qui vous accompagnera à la rencontre de votre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à tous. Nous partagerons aussi un voyage sonore et une méditation.
+
+Cette journée est ouverte tant aux personnes qui débutent le yoga et/ou l’aquarelle qu’à celles qui ont déjà de l’expérience.  
+
+PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12 personnes
 
 {% image src="/_images/autres-opportunites.webp" %}
 
