@@ -100,7 +100,7 @@ PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12
 
 **Lieu** : La Hulpe, dans un atelier
 
-Envie de capturer l'atmosphère d'un village, la lumière d'un paysage ou le charme d'une rue animée dans votre carnet de voyage ? Cette session de 3 demi-journées vous permettra de développer votre regard et votre technique dans une ambiance conviviale et stimulante.
+Envie de capturer l'atmosphère d'un village, la lumière d'un paysage ou le charme d'une rue animée dans votre carnet de voyage ? Ce trajet de 3 demi-journées vous permettra de développer votre regard et votre technique dans une ambiance conviviale et stimulante.
 
 Au programme : composition, croquis simplifié, travail des couleurs, lumière et ambiance, pour créer des aquarelles vivantes et expressives. Chaque participant bénéficie d'un accompagnement personnalisé grâce à un **maximum de 8 élèves par groupe**.
 
