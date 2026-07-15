@@ -86,6 +86,28 @@ Cette journée est ouverte tant aux personnes qui débutent le yoga et/ou l’aq
 
 PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12 personnes
 
+[ Je m'inscris à l'atelier aquarelle et yin yoga du 11 octobre](https://docs.google.com/forms/d/e/1FAIpQLSeN8QyO8BpPLlbqoX17dQ9o35G_eF7IJtg6hgy3_mNbcPd7bQ/viewform?usp=header)
+
+#### **Trajet de 3 cours à La Hulpe**
+
+**Dates :** 28 novembre - 12 décembre - 23 janvier
+
+**Horaires** : 
+
+ Le matin (10h00 – 12h30) : groupe niveau **intermédiaire**
+
+ L'après-midi (14h00 – 16h30) : groupe **débutant/faux débutant**
+
+**Lieu** : La Hulpe, dans un atelier
+
+Envie de capturer l'atmosphère d'un village, la lumière d'un paysage ou le charme d'une rue animée dans votre carnet de voyage ? Cette session de 3 demi-journées vous permettra de développer votre regard et votre technique dans une ambiance conviviale et stimulante.
+
+Au programme : composition, croquis simplifié, travail des couleurs, lumière et ambiance, pour créer des aquarelles vivantes et expressives. Chaque participant bénéficie d'un accompagnement personnalisé grâce à un **maximum de 8 élèves par groupe**.
+
+PAF pour le trajet de 3 cours : **90€** (matériel non compris, me contacter si vous n’avez pas de matériel)
+
+[Je m'inscris au trajet de 3 cours de novembre 2026 à janvier 2027](https://docs.google.com/forms/d/e/1FAIpQLSfQ4almN_nd3dHmalIu3tTnN9BAg0cKn7qE3JQcYMdRnAjJSA/viewform?usp=header)
+
 {% image src="/_images/autres-opportunites.webp" %}
 
-Pensez aussi à la [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) si vous disposez d'un groupe de minimum 5 personnes.
+Si vous disposez d'un groupe de minimum 5 personnes (famille, collègues, amis,...), contactez-moi pour organiser ensemble une [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) !
