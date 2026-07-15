@@ -10,4 +10,4 @@ name: Publications
 eleventyNavigation:
   order: 45
 ---
-
+{% image src="/_images/portrait-et-livres.webp" %}
