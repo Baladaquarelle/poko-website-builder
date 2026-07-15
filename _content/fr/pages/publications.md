@@ -7,5 +7,7 @@ localizationKey: d21559b2f249
 status: draft
 generatePage: normal
 name: Publications
+eleventyNavigation:
+  order: 45
 ---
 
