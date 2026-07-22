@@ -22,20 +22,6 @@ metadata:
 
 #### 
 
-#### Lundi 20 juillet 2026 : journée Balad'aquarelle sur le thème des animaux
-
-**Horaires** : 10h à 16h30
-
-**Lieu** : La Hulpe
-
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails sur l'organisation de ces journées et l'onglet "[A propos](https://www.voyage-aquarelle.be/fr/a-propos/)" pour l'approche pédagogique. 
-
-On s'intéressera plus spécifiquement aux animaux : oiseaux, chevaux, et tout autre animal au gré des rencontres. Aucune compétence en dessin n'est requise !
-
-**PAF** : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
-
-[Je m'inscris à la journée Balad'aquarelle du 20 juillet.](https://forms.gle/ZuiFck4aLgc1Fux3A)
-
 #### Samedi 1er et dimanche 2 août 2026 : stage à Lobbes 
 
 **Horaires** : samedi 1er août de 10h30 à 20h et dimanche 2 août de 9h30 à 16:30. 
