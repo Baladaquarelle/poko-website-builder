@@ -5,7 +5,7 @@ createdAt: 2026-07-15T12:19:00.000Z
 uuid: 83a32ee4dc00
 localizationKey: d21559b2f249
 status: published
-name: Publications
+name: Boutique
 eleventyNavigation:
   order: 45
 ---
