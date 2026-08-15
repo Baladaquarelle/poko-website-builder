@@ -22,27 +22,7 @@ metadata:
 
 #### 
 
-#### Samedi 1er et dimanche 2 août 2026 : stage à Lobbes 
-
-**Horaires** : samedi 1er août de 10h30 à 20h et dimanche 2 août de 9h30 à 16:30. 
-
-**Lieu** : Lobbes.
-
-Evadez-vous le temps d'un week-end entre marche et carnet de voyage à l'aquarelle, dans le cadre enchanteur de la région de Lobbes et Thuin, sur le thème de la pierre et de l'eau. 
-
-En fonction des conditions climatiques, nous alternerons des moments d'apprentissage de techniques et des moments de peinture libre et créative. 
-
-La technique sera travaillée  par le biais d'explications communes courtes et ciblées, ainsi que par un suivi personnalisé de chaque personne en fonction de ses besoins et de ses demandes. 
-
-Nous serons accueilli·es chez Colette, aquarelliste et randonneuse passionnée. Possibilité de camper sur place, de loger dans la région ou de rentrer chez soi le soir. Ambiance simple, chaleureuse et conviviale. 
-
-**PAF** : 130€ (les élèves amènent leurs propres aquarelles et pinceaux - le papier est fourni - possibilité de mise à disposition des aquarelles et pinceaux pour un montant de 20€). 
-
-La participation aux frais de nourriture (30€) et de camping (5€) seront à verser en liquide à la propriétaire des lieux. 
-
-La fiche complète vous est fournie sur demande (m'écrire à baladaquarelle@gmail.com).
-
-[Je m'inscris au stage des 1 et 2 août  ](https://forms.gle/zG6g2G9nxiFk9NF57)
+#### 
 
 #### **Dimanche 27 septembre 2026 : Balad’aquarelle classique&#160;**
 
