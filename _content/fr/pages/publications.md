@@ -17,7 +17,7 @@ L'ouvrage est disponible au prix de 24€ dans les librairies suivantes :
 
 [- ](https://librairiedessaules.be/)[Librairie des Saules (Lasne](https://librairiedessaules.be/)[) ](https://librairiedessaules.be/)
 
-Il peut être envoyé par la poste (frais de port gratuits dès 45€ pour la Belgique) ou récupéré en mains propres, sur rendez-vous, à Rixensart, à Liège ou à Bruxelles. 
+Il peut aussi être envoyé par la poste (frais de port gratuits dès 45€ pour la Belgique) ou être récupéré en mains propres, sur rendez-vous, à Rixensart, Liège ou Bruxelles. 
 
 Pour toute commande, me contacter par email (baladaquarelle@gmail.com).
 
