@@ -52,6 +52,18 @@ Vous y apprendrez à utiliser le matériel et comprendre les critères de choix 
 
 **PAF** : 45€, matériel compris - maximum 5 personnes
 
+#### **Samedi 6 mars 2027 : Balad’aquarelle en Forêt de Soignes**
+
+**Horaires** : 10h à 16h30
+
+**Lieu** : Rhode-St-Genèse
+
+La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails sur l'organisation de ces journées et l'onglet "[A propos](https://www.voyage-aquarelle.be/fr/a-propos/)" pour l'approche pédagogique. 
+
+PAF : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
+
+[Je m'inscris à la Balad'aquarelle du samedi 6 mars 2027](https://forms.gle/m6zHrkKZMjqgYpGs8)
+
 {% image src="/_images/pub-yourte.webp" %}
 
 #### 
@@ -72,15 +84,7 @@ Cette journée est ouverte tant aux personnes qui débutent le yoga et/ou l’aq
 
 PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12 personnes
 
-#### **Balad’aquarelle classique (de mai à octobre)**
-
-**Horaires** : 10h à 16h30
-
-**Lieu** : Rixensart - La Hulpe - LLN
-
-La journée "classique" : une balade de maximum 6 kilomètres, entrecoupées de pauses peinture sur le vif en plein air. Voyez l'onglet "[Journées Balad'aquarelle](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/)" pour plus de détails sur l'organisation de ces journées et l'onglet "[A propos](https://www.voyage-aquarelle.be/fr/a-propos/)" pour l'approche pédagogique. 
-
-PAF : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
+#### 
 
 {% image src="/_images/autres-opportunites.webp" %}
 
