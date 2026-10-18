@@ -8,18 +8,16 @@ status: published
 name: Journées Balad’aquarelle
 eleventyNavigation:
   order: 20
-vars: {}
 ---
-
 {% image src="/_images/journees-balad-aquarelle-2.webp", alt="Journées Balad'aquarelle", wrapper="h1" %}
 
 Offre(-toi) une parenthèse artistique au cœur de la nature.
 
-Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager.
+Balad’aquarelle, c’est l’occasion idéale de s’initier ou de se perfectionner à l’aquarelle, tout en profitant d’une activité douce et ressourçante. Un moment pour respirer, marcher, créer… et partager. La journée est adaptée aux aquarellistes débutants comme aux confirmés. 
 
 #### _Concrètement, comment ça se passe?_
 
-On se retrouve en plein air autour d’un thé ou d’un café à l’heure et au lieu prévus. Le sac avec le matériel est distribué et je t’en explique le contenu, ainsi que le programme de la journée. Si tu as des attentes ou des envies particulières, c’est le bon moment pour m’en faire part.
+On se retrouve en plein air autour d’un thé ou d’un café à l’heure et au lieu prévus. On fait connaissance et, si tu as des attentes ou des envies particulières, c’est le bon moment pour m’en faire part.
 
 Après une première expérimentation des couleurs en guise de « mise en jambe », on se met en route. En chemin, on en profite pour observer la nature et exercer notre œil. Après 20 à 30 minutes de marche, on s’installe pour peindre notre premier « vrai » sujet.
 
