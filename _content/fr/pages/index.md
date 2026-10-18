@@ -15,6 +15,14 @@ metadata:
 ---
 {% image src="/_images/balad-aquarelle-logo-rvb-500px-02.webp", alt="Balad'aquarelle", width="200", wrapper="h1" %}
 
+{% image src="/_images/couverture-livre.webp" %}
+
+#### \*\*\*Tout frais, tout chaud\*\*\*
+
+Mon livre "D'ici et d'ailleurs. Aquarelles de voyage et randonnée" est paru en septembre 2026 et disponible à la vente. Regarde l'onglet [Boutique ](https://www.voyage-aquarelle.be/fr/publications/)pour découvrir comment te le procurer. 
+
+#### Bienvenue sur le site de Balad'aquarelle
+
 Si tu rêves d'apprendre l'aquarelle de randonnée (les carnets de voyage à l'aquarelle en version légère) ou de te perfectionner dans cette technique, Balad'aquarelle est fait pour toi !
 
 Dans [l'agenda](https://www.voyage-aquarelle.be/fr/agenda/), tu trouveras toutes les dates d'activités à venir. Si tu te demandes comment se déroule la journée de Balad'aquarelle classique en pratique, je t'invite à visiter l'[onglet qui lui est dédié](https://www.voyage-aquarelle.be/fr/journees-balad-aquarelle/). 
