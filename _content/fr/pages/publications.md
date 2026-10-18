@@ -13,9 +13,9 @@ Le livre "D'ici et d'ailleurs. Aquarelles de voyage et randonnée" est un ouvrag
 
 L'ouvrage est disponible au prix de 24€ dans les librairies suivantes : 
 
-[- Librairie le Chat Botté (Rixensart)](https://share.google/lbcta7mflIoqUthMv)
+[- Librairie le Chat Botté (Rixensart)](https://www.librairielechatbotte.com/)
 
-[- ](https://share.google/3t9G5dc1gEqvwVVIF)[Librairie des Saules (Lasne](https://share.google/3t9G5dc1gEqvwVVIF)[) ](https://share.google/3t9G5dc1gEqvwVVIF)
+[- ](https://librairiedessaules.be/)[Librairie des Saules (Lasne](https://librairiedessaules.be/)[) ](https://librairiedessaules.be/)
 
 Il peut être envoyé par la poste (frais de port gratuits dès 45€ pour la Belgique) ou récupéré en mains propres, sur rendez-vous, à Rixensart, à Liège ou à Bruxelles. 
 
