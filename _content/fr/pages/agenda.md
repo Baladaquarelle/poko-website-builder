@@ -40,7 +40,7 @@ PAF pour le trajet de 3 cours : **90€** (matériel non compris, me contacter
 
 [Je m'inscris au trajet de 3 cours de novembre 2026 à janvier 2027](https://docs.google.com/forms/d/e/1FAIpQLSfQ4almN_nd3dHmalIu3tTnN9BAg0cKn7qE3JQcYMdRnAjJSA/viewform?usp=header)
 
-#### **Atelier spécial débutant (dates à venir pour février, mars et avril 2027)** 
+#### **Samedi 6 février 2027 : Atelier 'spécial débutant'** 
 
 **Horaires** : 14h à 16h30
 
@@ -51,6 +51,8 @@ Si vous êtes débutant.e et que vous n'osez pas vous lancer sans avoir appris q
 Vous y apprendrez à utiliser le matériel et comprendre les critères de choix de celui-ci (pinceau, papier et couleurs). De plus, vous découvrirez et pratiquerez les techniques et notions suivantes : technique sèche et humide, lavis en aplat et en dégradé, les valeurs, ouvrir des blancs et la perspective atmosphérique.
 
 **PAF** : 45€, matériel compris - maximum 5 personnes
+
+[Je m'inscris à l'atelier débutant du samedi 6 février 2027](https://forms.gle/bpga5REKiuARZTHg9)
 
 #### **Samedi 6 mars 2027 : Balad’aquarelle en Forêt de Soignes**
 
