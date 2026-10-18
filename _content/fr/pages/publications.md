@@ -9,15 +9,15 @@ name: Boutique
 eleventyNavigation:
   order: 45
 ---
-{% image src="/_images/portrait-et-livres.webp" %}
+Le livre "D'ici et d'ailleurs. Aquarelles de voyage et randonnée" est un ouvrage de 80 pages qui reprend le meilleur de mes aquarelles de voyage pour la période 2023 - 2025. Je t'emmène en Himalaya, sur les chemins de Compostelle, au travers de l'Amérique Centrale, en Ouganda, en Belgique et même aux Etats-Unis. 
 
-Le livre "D'ici et d'ailleurs. Aquarelles de voyage et randonnée" est un ouvrage de 80 pages qui reprend le meilleur de mes aquarelles de voyage pour la période 2023 - 2025. 
+L'ouvrage est disponible au prix de 24€ dans les librairies suivantes : 
 
-Je vous emmène en Himalaya, sur les chemins de Compostelle, au travers de l'Amérique Centrale, en Ouganda, en Belgique et même aux Etats-Unis. 
+[- Librairie le Chat Botté (Rixensart)](https://share.google/lbcta7mflIoqUthMv)
 
-Si vous souhaitez vous procurer l'ouvrage et que vous n'avez pas eu l'occasion de le pré-commander, il sera disponible au prix de 24€ dès le 13 septembre 2026, date de l'[évènement de lancement](https://forms.gle/xFcmKi6Ne41CyREm8). 
+[- ](https://share.google/3t9G5dc1gEqvwVVIF)[Librairie des Saules (Lasne](https://share.google/3t9G5dc1gEqvwVVIF)[) ](https://share.google/3t9G5dc1gEqvwVVIF)
 
-Il peut être envoyé par la poste (frais de port gratuits dès 45€ pour la Belgique) ou récupéré en mains propres sur rendez-vous à Rixensart ou à Bruxelles (Bruxelles-Midi ou Bruxelles-Nord). 
+Il peut être envoyé par la poste (frais de port gratuits dès 45€ pour la Belgique) ou récupéré en mains propres, sur rendez-vous, à Rixensart, à Liège ou à Bruxelles. 
 
 Pour toute commande, me contacter par email (baladaquarelle@gmail.com).
 
