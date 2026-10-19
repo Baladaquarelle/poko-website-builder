@@ -72,7 +72,7 @@ PAF : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
 
 #### 
 
-#### **Atelier aquarelle et Yin yoga (date à venir pour mars 2027)**
+#### **Samedi 20 mars 2027 : Journée aquarelle et Yin yoga&#160;**
 
 **Horaires** : 10h à 17h
 
@@ -89,5 +89,9 @@ PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12
 #### 
 
 {% image src="/_images/autres-opportunites.webp" %}
+
+## 23 au 25 avril 2027 : Week-end Aquarelle et bien-être
+
+Un weekend en résidentiel, au milieu de la nature, qui allie bien-être et aquarelle, en collaboration avec Helena. Plus d'infos arrivent en novembre, mais réservez déjà les dates !
 
 Si vous disposez d'un groupe de minimum 5 personnes (famille, collègues, amis,...), contactez-moi pour organiser ensemble une [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) !
