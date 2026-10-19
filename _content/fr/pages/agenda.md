@@ -80,7 +80,7 @@ PAF : 65€ matériel compris / 50€ sans matériel - maximum 8 personnes
 
 Une journée d’exception qui conjugue créativité, mouvement et relaxation, un voyage au cœur de vos cinq sens, avec l’aquarelle comme moyen d’explorer et d’exprimer vos ressentis.
 
-La journée est organisée en collaboration avec Helena, qui vous accompagnera à la rencontre de votre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à tous. Nous partagerons aussi un voyage sonore et une méditation.
+La journée est organisée en collaboration avec Helena, qui vous accompagnera à la rencontre de votre corps à travers des mouvements de Yin yoga — un yoga doux littéralement accessible à tous. Helena propose aussi un voyage sonore et une méditation.
 
 Cette journée est ouverte tant aux personnes qui débutent le yoga et/ou l’aquarelle qu’à celles qui ont déjà de l’expérience.  
 
