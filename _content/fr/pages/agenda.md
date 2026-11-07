@@ -26,9 +26,9 @@ metadata:
 
 **Horaires** : 
 
- Le matin (10h00 – 12h30) : groupe niveau **intermédiaire** (reste 1 place)
+ Le matin (10h00 – 12h30) : groupe niveau **intermédiaire** (complet)
 
- L'après-midi (14h00 – 16h30) : groupe **débutant/faux débutant** (reste 3 places)
+ L'après-midi (14h00 – 16h30) : groupe **débutant/faux débutant** (reste 2 places)
 
 **Lieu** : La Hulpe, dans un atelier
 
@@ -86,12 +86,18 @@ Cette journée est ouverte tant aux personnes qui débutent le yoga et/ou l’aq
 
 PAF : 75€ (mise à disposition du matériel d’aquarelle +15€) - maximum 12 personnes
 
-#### 
+#### Du samedi 23 au dimanche 25 avril 2027 : Stage aquarelle et bien-être 
+
+Un weekend en résidentiel, au milieu de la nature, qui allie bien-être et aquarelle, en collaboration avec Helena. 
+
+**Lieu** : Louvain-la-Neuve
+
+💶 PAF : 370€ (**tarif early bird : 330€** pour les acomptes payés avant le 1er décembre) 
+
+Le prix du stage couvre les prestations pédagogiques, le logement en chambre partagée avec sanitaires en commun et les repas (2 soupers, 2 petits-déjeuners et 2 repas de midi), ainsi que le papier pour l'aquarelle. Vous venez avec votre matériel d'aquarelle (une liste du matériel conseillé vous sera envoyée). 
+
+👥 12 participant·e·s maximum - Le stage est confirmé à partir de 6 personnes inscrites. 
 
 {% image src="/_images/autres-opportunites.webp" %}
-
-## 23 au 25 avril 2027 : Week-end Aquarelle et bien-être
-
-Un weekend en résidentiel, au milieu de la nature, qui allie bien-être et aquarelle, en collaboration avec Helena. Plus d'infos arrivent en novembre, mais réservez déjà les dates !
 
 Si vous disposez d'un groupe de minimum 5 personnes (famille, collègues, amis,...), contactez-moi pour organiser ensemble une [Balad’aquarelle sur-mesure](/fr/stages-et-journees-speciales-ou-sur-mesure/) !
